@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./IMG/logo1.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Fruver</title>
+</head>
+<body  style="background-color: #f2e2dfb6;">
+  <a href="#nav" class="btn-flotante" tabindex="0" class="btn btn-lg btn-danger" role="button" data-bs-toggle="popover" data-bs-trigger="hover" title="volver al navegador"><img src="./IMG/flecha.png" alt=""></a>
+
+    <!-- MENÚ -->
+
+    <nav id="nav" class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+         <a href="index.html"><img src="./IMG/logo1.png" class="logo" alt="logo"></a>
+          <a class="navbar-brand" href="index.html">L A . H U E R T A</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-sm-0 mb-md-0 mb-lg-0 ">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">INICIO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="quienessomos.html">QUIENES SOMOS</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="productos.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  PRODUCTOS
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="frutas.html">FRUTAS</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="verduras.html">VERDURAS</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="legumbres.html">LEGUMBRES</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="carnicos.html">CARNICOS</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">LACTEOS</a></li>
+                </ul>
+                <li class="nav-item">
+                    <a class="nav-link" href="contactanos.html">CONTACTANOS</a>
+                </li>
+            </ul>
+            <div class="d-flex">
+              <ul class="navbar-nav me-auto mb-2 mb-sm-0 mb-md-0 mb-lg-0 ">
+                <li class="nav-item align d-flex">
+                      <a href="iniciarsesion.html" class="btn btn-secondary bot_nav">INICIAR SESIÓN</a>
+                    </li>
+                    <li class="nav-item align d-flex">
+                      <a href="registrarse.html" class="btn btn-secondary bot_nav">REGISTRARSE</a>
+                    </li>
+              </ul>
+            </div>
+          </div>
+          <div class="d-flex">
+          <ul class="navbar-nav me-auto mb-2 mb-sm-0 mb-md-0 mb-lg-0 ">
+            <li class="nav-item">
+              <a href="carrito.html" class="btn bot_nav"><img class="car" src="./IMG/carro.png" alt=""></a>
+            </li>
+          </ul>
+          </div>
+        </div>
+      </nav>
+       <!-- TITULO -->
+       <div id="produc" class="text-center">
+        <h1 class="titulo">LACTEOS</h1>
+        <hr>
+      </div>
+   
+            <!-- ACORDIONES -->
+            <div class="container-sm">
+              <div id="acordiones" class="accordion accordion-flush acor-pro" id="accordionFlushExample">
+                <div class="accordion-item" style="margin-bottom: 3px;" >
+                  <h2 class="accordion-header" id="flush-headingOne" style="border: #88ec79 solid 2px;">
+                    <button class="accordion-button collapsed acordi" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne" style="background-color: #ABF2A0;">
+                      YOGURT <img src="./IMG/yogur.png" alt="">
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="pro-conte text-center">
+                      <div class="accordion-body"><h2 style="color: #A67F5D;">BENEFICIOS</h2>El yogur contiene dos tipos de proteínas, suero y caseína, consideradas "buenas" por ser de fácil digestión y ricas en aminoácidos esenciales.</div>
+                      <div tabindex="0" class="btn btn-lg role="button" data-bs-toggle="popover" data-bs-trigger="hover" title="IMAGEN DEL PRODUCTO"><img class="img-pro" src="./IMG/yogurt.jpg" alt=""></div>
+                    </div>
+                    <div class="text-center" style="background-color: #abf2a0a9; margin:1%; padding: 1%;">Es un producto lácteo obtenido mediante la fermentación de la leche​ por medio de bacterias de los géneros Lactobacillus y Streptococcus.</div>
+                    <div class="text-center" style="margin: 1%;">
+                      <button id="liveToastBtn25" type="button" class="btn btn-danger "  marcador="25">Agregar 🛒</button>
+                      <div class="position-fixed bottom-0 start-0 p-3" style="z-index: 11">
+                        <div id="liveToast25" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                          <div class="toast-header">
+                            <img src="./IMG/mercado.png" class="rounded me-2" alt="...">
+                            <strong class="me-auto">CARRITO</strong>
+                            <small>Hace 1 segundo</small>
+                            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                          </div>
+                          <div class="toast-body">
+                            Su producto fue agregado a el carrito
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  
+                </div>
+                <div class="accordion-item"  style="margin-bottom: 3px;">
+                  <h2 class="accordion-header" id="flush-headingTwo" style="border: #88ec79 solid 2px;">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo" style="background-color: #ABF2A0;">
+                      QUESO CREMA <img src="./IMG/queso.png" alt="">
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                    <div class="pro-conte text-center">
+                      <div class="accordion-body"><h2 style="color: #A67F5D;">BENEFICIOS</h2>El queso contiene estos minerales y los utiliza para obtener energía, construir y reparar estructuras óseas, musculares y articulares, y regular el metabolismo.</div>
+                      <div tabindex="0" class="btn btn-lg role="button" data-bs-toggle="popover" data-bs-trigger="hover" title="IMAGEN DEL PRODUCTO"><img class="img-pro" src="./IMG/queso.jpg" alt=""></div>
+                    </div>
+                    <div class="text-center" style="background-color: #abf2a0a9; margin:1%; padding: 1%;">Alimento sólido que se obtiene por maduración de la cuajada de la leche una vez eliminado el suero; sus diferentes variedades dependen del origen de la leche empleada, de los métodos de elaboración seguidos y del grado de madurez alcanzado.</div>
+                    <div class="text-center" style="margin: 1%;">
+                      <button id="liveToastBtn26" type="button" class="btn btn-danger "  marcador="26">Agregar 🛒</button>
+                      <div class="position-fixed bottom-0 start-0 p-3" style="z-index: 11">
+                        <div id="liveToast26" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                          <div class="toast-header">
+                            <img src="./IMG/mercado.png" class="rounded me-2" alt="...">
+                            <strong class="me-auto">CARRITO</strong>
+                            <small>Hace 1 segundo</small>
+                            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                          </div>
+                          <div class="toast-body">
+                            Su producto fue agregado a el carrito
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+                <div class="accordion-item"  style="margin-bottom: 3px;">
+                  <h2 class="accordion-header" id="flush-headingThree" style="border: #88ec79 solid 2px;">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree" style="background-color: #ABF2A0;">
+                      MANTEQUILLA <img src="./IMG/mantequilla.png" alt="">
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <div class="pro-conte text-center">
+                      <div class="accordion-body"><h2 style="color: #A67F5D;">BENEFICIOS</h2>La mantequilla está compuesta en un 80% de grasa, el resto es principalmente agua, lo que la convierte en un alimento muy calórico</div>
+                      <div tabindex="0" class="btn btn-lg role="button" data-bs-toggle="popover" data-bs-trigger="hover" title="IMAGEN DEL PRODUCTO"><img class="img-pro" src="./IMG/mantequilla.jpg" alt=""></div>
+                    </div>
+                    <div class="text-center" style="background-color: #abf2a0a9; margin:1%; padding: 1%;">Grasa comestible que se obtiene agitando o batiendo la crema de la leche de vaca y es de consistencia blanda, color amarillento y sabor suave; se consume cruda untada en pan y también se emplea en la elaboración de platos o cocción de alimentos.</div>
+                    <div class="text-center" style="margin: 1%;">
+                      <button id="liveToastBtn27" type="button" class="btn btn-danger "  marcador="27">Agregar 🛒</button>
+                      <div class="position-fixed bottom-0 start-0 p-3" style="z-index: 11">
+                        <div id="liveToast27" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                          <div class="toast-header">
+                            <img src="./IMG/mercado.png" class="rounded me-2" alt="...">
+                            <strong class="me-auto">CARRITO</strong>
+                            <small>Hace 1 segundo</small>
+                            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                          </div>
+                          <div class="toast-body">
+                            Su producto fue agregado a el carrito
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+                <div class="accordion-item"  style="margin-bottom: 3px;">
+                  <h2 class="accordion-header" id="flush-headingFour" style="border: #88ec79 solid 2px;">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour" style="background-color: #ABF2A0;">
+                      LECHE <img src="./IMG/botella-de-leche.png" alt="">
+                    </button>
+                  </h2>
+                  <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                    <div class="pro-conte text-center">
+                      <div class="accordion-body"><h2 style="color: #A67F5D;">BENEFICIOS</h2>El consumo de leche ayuda a fortalecer los huesos y dientes y reduce el riesgo de osteoporosis o debilidad de los huesos en la edad adulta. Aporta nutrientes como proteínas, calcio, vitaminas A, B1, B2, B12 y D.</div>
+                      <div tabindex="0" class="btn btn-lg role="button" data-bs-toggle="popover" data-bs-trigger="hover" title="IMAGEN DEL PRODUCTO"><img class="img-pro" style="width:100% ;" src="./IMG/leche.webp" alt=""></div>
+                    </div>
+                    <div class="text-center" style="background-color: #abf2a0a9; margin:1%; padding: 1%;">Sustancia líquida y blanca que segregan las mamas de las hembras de los mamíferos para alimentar a sus crías y que está constituida por caseína, lactosa, sales inorgánicas, glóbulos de grasa suspendidos y otras sustancias.</div>
+                    <div class="text-center" style="margin: 1%;">
+                      <button id="liveToastBtn28" type="button" class="btn btn-danger "  marcador="28">Agregar 🛒</button>
+                      <div class="position-fixed bottom-0 start-0 p-3" style="z-index: 11">
+                        <div id="liveToast28" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                          <div class="toast-header">
+                            <img src="./IMG/mercado.png" class="rounded me-2" alt="...">
+                            <strong class="me-auto">CARRITO</strong>
+                            <small>Hace 1 segundo</small>
+                            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                          </div>
+                          <div class="toast-body">
+                            Su producto fue agregado a el carrito
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+                <div class="accordion-item"  style="margin-bottom: 3px;">
+                  <h2 class="accordion-header" id="flush-headingFive" style="border: #88ec79 solid 2px;">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive" style="background-color: #ABF2A0;">
+                      CUAJADA <img src="./IMG/cuajada.png" alt="">
+                    </button>
+                  </h2>
+                  <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                    <div class="pro-conte text-center">
+                      <div class="accordion-body"><h2 style="color: #A67F5D;">BENEFICIOS</h2>Es muy similar al de la leche de la cual procede; contiene lactosa (azúcar propio de la leche), es rica en proteínas de alto valor biológico, calcio de fácil asimilación, vitaminas del grupo B (especialmente, B2 o riboflavina) y vitaminas liposolubles A y D.</div>
+                      <div tabindex="0" class="btn btn-lg role="button" data-bs-toggle="popover" data-bs-trigger="hover" title="IMAGEN DEL PRODUCTO"><img class="img-pro" style="width:100% ;" src="./IMG/cuajada.jpg" alt=""></div>
+                    </div>
+                    <div class="text-center" style="background-color: #abf2a0a9; margin:1%; padding: 1%;">Producto lácteo que se forma al separarse una parte de la leche del suero por acción del calor, del cuajo o de los ácidos; se utiliza para hacer queso y también se toma como alimento en desayunos, postres o meriendas generalmente añadiéndole azúcar o miel. </div>
+                    <div class="text-center" style="margin: 1%;">
+                      <button id="liveToastBtn29" type="button" class="btn btn-danger "  marcador="29">Agregar 🛒</button>
+                      <div class="position-fixed bottom-0 start-0 p-3" style="z-index: 11">
+                        <div id="liveToast29" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                          <div class="toast-header">
+                            <img src="./IMG/mercado.png" class="rounded me-2" alt="...">
+                            <strong class="me-auto">CARRITO</strong>
+                            <small>Hace 1 segundo</small>
+                            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                          </div>
+                          <div class="toast-body">
+                            Su producto fue agregado a el carrito
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+                <div class="accordion-item"  style="margin-bottom: 3px;">
+                  <h2 class="accordion-header" id="flush-headingOnSix" style="border: #88ec79 solid 2px;">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix" style="background-color: #ABF2A0;">
+                      HUEVOS <img src="./IMG/huevo.png" alt="">
+                    </button>
+                  </h2>
+                  <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+                    <div class="pro-conte text-center">
+                      <div class="accordion-body"><h2 style="color: #A67F5D;">BENEFICIOS</h2>Los huevos son uno de los alimentos más nutritivos del planeta, y una extraordinaria fuente de proteína. Un solo huevo aporta seis gramos de proteína y 14 nutrientes esenciales, incluyendo vitaminas A, B, D y E, además de ser fuente de calcio, selenio y yodo.</div>
+                      <div tabindex="0" class="btn btn-lg role="button" data-bs-toggle="popover" data-bs-trigger="hover" title="IMAGEN DEL PRODUCTO"><img class="img-pro" src="./IMG/huevos.jfif" alt=""></div>
+                    </div>
+                    <div class="text-center" style="background-color: #abf2a0a9; margin:1%; padding: 1%;">Cuerpo redondo u ovalado, con una membrana o cáscara exterior, que ponen las hembras de algunos animales y que contiene en su interior el embrión de un nuevo ser y el alimento necesario para que crezca.</div>
+                    <div class="text-center" style="margin: 1%;">
+                      <button id="liveToastBtn30" type="button" class="btn btn-danger "  marcador="30">Agregar 🛒</button>
+                      <div class="position-fixed bottom-0 start-0 p-3" style="z-index: 11">
+                        <div id="liveToast30" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                          <div class="toast-header">
+                            <img src="./IMG/mercado.png" class="rounded me-2" alt="...">
+                            <strong class="me-auto">CARRITO</strong>
+                            <small>Hace 1 segundo</small>
+                            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                          </div>
+                          <div class="toast-body">
+                            Su producto fue agregado a el carrito
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+
+  <hr>
+    <!-- FOOTER -->
+      <footer>
+        <div id="foot1" class="text-center">
+          <div class="row-container rd-2 page_1">
+            <div class="row-content">
+              <div class="row" data-role="line">
+                <div data-role="cell" class="colum div-foot" style="width: 33%">
+                  <div id="foot-info" class="colum-content">
+                    <p class="footer-title">MENU PRINCIPAL</p>
+                    <ul class="list-unstyled">
+                      <li>
+                        <a class="foot" href="index.html">Inicio</a>
+                      </li>
+                      <li>
+                        <a class="foot" href="quienessomos.html">Quienes somos</a>
+                      </li>
+                      <li>
+                        <a class="foot" href="contactanos.html">Contactanos</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div data-role="cell" class="colum div-foot" style="width: 33%">
+                  <div id="foot-info" class="colum-content">
+                    <p class="footer-title">PRODUCTOS</p>
+                    <ul class="list-unstyled">
+                      <li>
+                        <a class="foot" href="frutas.html">Frutas</a>
+                      </li>
+                      <li>
+                        <a class="foot" href="verduras.html">Verduras</a>
+                      </li>
+                      <li>
+                        <a class="foot" href="legumbres.html">Legumbres</a>
+                      </li>
+                      <li>
+                        <a class="foot" href="carnicos.html">Carnicos</a>
+                      </li>
+                      <li>
+                        <a class="foot" href="#">Lacteos</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div data-role="cell" class="colum div-foot" style="width: 33%">
+                  <div id="foot-info" class="colum-content">
+                    <p class="footer-title">REDES SOCIALES</p>
+                    <ul class="list-unstyled">
+                      <li>
+                        <a href="https://www.facebook.com/" target="_blank"><img class="redes" src="./IMG/facebook.png" alt="" tabindex="0" class="btn btn-lg btn-danger" role="button" data-bs-toggle="popover" data-bs-trigger="hover" title="FACEBOOK"></a>  
+                      </li>
+                      <li>
+                        <a href="https://www.instagram.com/" target="_blank"><img class="redes" src="./IMG/instagram.png" alt="" tabindex="0" class="btn btn-lg btn-danger" role="button" data-bs-toggle="popover" data-bs-trigger="hover" title="INSTAGRAM"></a>
+                      </li>
+                      <li>
+                        <a href="https://www.whatsapp.com/?lang=es" target="_blank"><img class="redes"  src="./IMG/whatsapp.png" alt="" tabindex="0" class="btn btn-lg btn-danger" role="button" data-bs-toggle="popover" data-bs-trigger="hover" title="WHATSAPP"></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="foot2" class="text-center">
+          <p id="p-foot">"LA HACIENDA, TU MEJOR OPCION"</p>
+        </div>
+      </footer>
+      <script src="./js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

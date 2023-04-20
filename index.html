@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./IMG/logo1.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Fruver</title>
+</head>
+<body  style="background-color: #f2e2dfb6;">
+  <a href="#nav" class="btn-flotante" tabindex="0" class="btn btn-lg btn-danger" role="button" data-bs-toggle="popover" data-bs-trigger="hover" title="volver al navegador"><img src="./IMG/flecha.png" alt=""></a>
+
+    <!-- MENÚ -->
+
+    <nav id="nav" class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a href="#"><img src="./IMG/logo1.png" class="logo" alt="logo"></a>
+          <a class="navbar-brand" href="#">L A . H U E R T A</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-sm-0 mb-md-0 mb-lg-0 ">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">INICIO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="quienessomos.html">QUIENES SOMOS</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  PRODUCTOS
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="frutas.html">FRUTAS</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="verduras.html">VERDURAS</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="legumbres.html">LEGUMBRES</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="carnicos.html">CARNICOS</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="lacteos.html">LACTEOS</a></li>
+                </ul>
+                <li class="nav-item">
+                    <a class="nav-link" href="contactanos.html">CONTACTANOS</a>
+                </li>
+            </ul>
+            <div class="d-flex">
+              <ul class="navbar-nav me-auto mb-2 mb-sm-0 mb-md-0 mb-lg-0 ">
+                <li class="nav-item align d-flex">
+                      <a href="iniciarsesion.html" class="btn btn-secondary bot_nav">INICIAR SESIÓN</a>
+                    </li>
+                    <li class="nav-item align d-flex">
+                      <a href="registrarse.html" class="btn btn-secondary bot_nav">REGISTRARSE</a>
+                    </li>
+              </ul>
+            </div>
+          </div>
+          <div class="d-flex">
+          <ul class="navbar-nav me-auto mb-2 mb-sm-0 mb-md-0 mb-lg-0 ">
+            <li class="nav-item">
+              <a href="carrito.html" class="btn bot_nav"><img class="car" src="./IMG/carro.png" alt=""></a>
+            </li>
+          </ul>
+          </div>
+        </div>
+      </nav>
+    
+    <!-- CAROUSEL -->
+
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" aria-label="Slide 9"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9" aria-label="Slide 10"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./IMG/2.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./IMG/1.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./IMG/7.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./IMG/4.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./IMG/5.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./IMG/8.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./IMG/3.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./IMG/6.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./IMG/9.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./IMG/10.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- QUIENES SOMOS -->
+      <div id="quienso" class="text-center">
+        <h1 class="titulo">QUIENES SOMOS</h1>
+        <hr>
+        <div class="text-center contenido">
+          <div class="quieness">
+            <p class="parrafo">Somos un emprendimiento innovador, que busca satisfacer las necesidades de todos nuestros clientes por medio de nuestra pagina web y redes sociales o tambien se nos puede encontrar en nuestro punto fisico.<br><br>
+              Realizamos pedidos por el momento solo a la sabana occidente que es donde nos encontramos ubicados, y ahora que esperar empieza a comprar con nosotros y disfruta de los mejores productos y con la mejor calidad.
+            </p>
+          </div>
+          <div>
+            <img class="lg" src="./IMG/LOGO.png" alt="">
+          </div>
+        </div> 
+      </div>
+
+      <!-- PRODUCTOS -->
+      <div id="produc" class="text-center">
+        <h1 class="titulo">PRODUCTOS</h1>
+        <hr>
+      </div>
+
+      <!-- CARTAS PRDUCTOS -->
+      <div id="cartas">
+        <!-- 1 -->  
+          <div class="card">
+            <img src="./IMG/banano.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-center">Bananano</h5>
+              <p class="card-text text-center">Lleva 1 Kl por tan solo $3,650</p>
+              <button id="liveToastBtn" type="button" class="btn btn-danger " marcador="1">Agregar 🛒</button>
+              <div class="position-fixed bottom-0 start-0 p-3" style="z-index: 11">
+                <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                  <div class="toast-header">
+                    <img src="./IMG/mercado.png" class="rounded me-2" alt="...">
+                    <strong class="me-auto">CARRITO</strong>
+                    <small>Hace 1 segundo</small>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                  </div>
+                  <div class="toast-body">
+                    Su producto fue agregado a el carrito
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <!-- 2 -->  
+        <div class="card">
+          <img src="./IMG/sandia.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">Sandia / Patilla</h5>
+              <p class="card-text text-center">Lleva 1 Kl por tan solo $2,800</p>
+              <button id="liveToastBtn2" type="button" class="btn btn-danger " marcador="2">Agregar 🛒</button>
+              <div class="position-fixed bottom-0 start-0 p-3" style="z-index: 11">
+                <div id="liveToast2" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                  <div class="toast-header">
+                    <img src="./IMG/mercado.png" class="rounded me-2" alt="...">
+                    <strong class="me-auto">CARRITO</strong>
+                    <small>Hace 1 segundo</small>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                  </div>
+                  <div class="toast-body">
+                    Su producto fue agregado a el carrito
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+
+        <!-- 3 -->  
+        <div class="card">
+          <img src="./IMG/manzana.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">Manzana</h5>
+              <p class="card-text text-center">Lleva 1 Kl por tan solo $1,242</p>
+              <button id="liveToastBtn3" type="button" class="btn btn-danger " marcador="3">Agregar 🛒</button>
+              <div class="position-fixed bottom-0 start-0 p-3" style="z-index: 11">
+                <div id="liveToast3" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                  <div class="toast-header">
+                    <img src="./IMG/mercado.png" class="rounded me-2" alt="...">
+                    <strong class="me-auto">CARRITO</strong>
+                    <small>Hace 1 segundo</small>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                  </div>
+                  <div class="toast-body">
+                    Su producto fue agregado a el carrito
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+
+        <!-- 4 -->  
+        <div class="card">
+          <img src="./IMG/mango.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">Mango dulce</h5>
+              <p class="card-text text-center">Lleva 1 Kl por tan solo $2,392</p>
+              <button id="liveToastBtn4" type="button" class="btn btn-danger " marcador="4">Agregar 🛒</button>
+              <div class="position-fixed bottom-0 start-0 p-3" style="z-index: 11">
+                <div id="liveToast4" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                  <div class="toast-header">
+                    <img src="./IMG/mercado.png" class="rounded me-2" alt="...">
+                    <strong class="me-auto">CARRITO</strong>
+                    <small>Hace 1 segundo</small>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                  </div>
+                  <div class="toast-body">
+                    Su producto fue agregado a el carrito
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+
+        <!-- 5 -->  
+        <div class="card">
+          <img src="./IMG/kiwi.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">Kiwi verde</h5>
+              <p class="card-text text-center">Lleva 1 Kl por tan solo $4,143</p>
+              <button id="liveToastBtn5" type="button" class="btn btn-danger " marcador="5">Agregar 🛒</button>
+              <div class="position-fixed bottom-0 start-0 p-3" style="z-index: 11">
+                <div id="liveToast5" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                  <div class="toast-header">
+                    <img src="./IMG/mercado.png" class="rounded me-2" alt="...">
+                    <strong class="me-auto">CARRITO</strong>
+                    <small>Hace 1 segundo</small>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                  </div>
+                  <div class="toast-body">
+                    Su producto fue agregado a el carrito
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+
+        <!-- 6 -->  
+        <div class="card">
+          <img src="./IMG/durazno.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">Durazno</h5>
+            <p class="card-text text-center">Lleva 1 Kl por tan solo $2,490</p>
+            <button id="liveToastBtn6" type="button" class="btn btn-danger " marcador="6">Agregar 🛒</button>
+            <div class="position-fixed bottom-0 start-0 p-3" style="z-index: 11">
+              <div id="liveToast6" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                  <img src="./IMG/mercado.png" class="rounded me-2" alt="...">
+                  <strong class="me-auto">CARRITO</strong>
+                  <small>Hace 1 segundo</small>
+                  <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                  Su producto fue agregado a el carrito
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7 -->  
+        <div class="card">
+          <img src="./IMG/brocoli.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">Brocoli</h5>
+            <p class="card-text text-center">Lleva 1 Kl por tan solo $2,000</p>
+            <button id="liveToastBtn7" type="button" class="btn btn-primary" marcador="7">Agregar 🛒</button>
+            <div class="position-fixed bottom-0 start-0 p-3" style="z-index: 11">
+              <div id="liveToast7" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                  <img src="./IMG/mercado.png" class="rounded me-2" alt="...">
+                  <strong class="me-auto">CARRITO</strong>
+                  <small>Hace 1 segundo</small>
+                  <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                  Su producto fue agregado a el carrito
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8 -->  
+        <div class="card">
+          <img src="./IMG/zanahoria.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">Zanahoria</h5>
+            <p class="card-text text-center">Lleva 1 Kl por tan solo $982</p>
+            <button id="liveToastBtn8" type="button" class="btn btn-primary" marcador="8">Agregar 🛒</button>
+            <div class="position-fixed bottom-0 start-0 p-3" style="z-index: 11">
+              <div id="liveToast8" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                  <img src="./IMG/mercado.png" class="rounded me-2" alt="...">
+                  <strong class="me-auto">CARRITO</strong>
+                  <small>Hace 1 segundo</small>
+                  <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                  Su producto fue agregado a el carrito
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 9 -->  
+        <div class="card">
+          <img src="./IMG/tomate.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center"> Tomate rojo</h5>
+            <p class="card-text text-center">Lleva 1 Kl por tan solo $1,419</p>
+            <button id="liveToastBtn9" type="button" class="btn btn-primary" marcador="9">Agregar 🛒</button>
+            <div class="position-fixed bottom-0 start-0 p-3" style="z-index: 11">
+              <div id="liveToast9" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                  <img src="./IMG/mercado.png" class="rounded me-2" alt="...">
+                  <strong class="me-auto">CARRITO</strong>
+                  <small>Hace 1 segundo</small>
+                  <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                  Su producto fue agregado a el carrito
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 10 -->  
+        <div class="card">
+          <img src="./IMG/pepino.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">Pepino cohombro</h5>
+            <p class="card-text text-center">Lleva 1 Kl por tan solo $950</p>
+            <button id="liveToastBtn10" type="button" class="btn btn-primary" marcador="10">Agregar 🛒</button>
+            <div class="position-fixed bottom-0 start-0 p-3" style="z-index: 11">
+              <div id="liveToast10" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                  <img src="./IMG/mercado.png" class="rounded me-2" alt="...">
+                  <strong class="me-auto">CARRITO</strong>
+                  <small>Hace 1 segundo</small>
+                  <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                  Su producto fue agregado a el carrito
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 11 -->  
+        <div class="card">
+          <img src="./IMG/lechuga.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">Lechuga crespa</h5>
+            <p class="card-text text-center">Lleva 1 Kl por tan solo $2,000</p>
+            <button id="liveToastBtn11" type="button" class="btn btn-primary" marcador="11">Agregar 🛒</button>
+            <div class="position-fixed bottom-0 start-0 p-3" style="z-index: 11">
+              <div id="liveToast11" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                  <img src="./IMG/mercado.png" class="rounded me-2" alt="...">
+                  <strong class="me-auto">CARRITO</strong>
+                  <small>Hace 1 segundo</small>
+                  <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                  Su producto fue agregado a el carrito
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 12 -->  
+          <div class="card">
+            <img src="./IMG/cebolla.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-center">Cebolla cabezona</h5>
+              <p class="card-text text-center">Lleva 1 Kl por tan solo $1,600</p>
+              <button id="liveToastBtn12" type="button" class="btn btn-primary" marcador="12">Agregar 🛒</button>
+              <div class="position-fixed bottom-0 start-0 p-3" style="z-index: 11">
+                <div id="liveToast12" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                  <div class="toast-header">
+                    <img src="./IMG/mercado.png" class="rounded me-2" alt="...">
+                    <strong class="me-auto">CARRITO</strong>
+                    <small>Hace 1 segundo</small>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                  </div>
+                  <div class="toast-body">
+                    Su producto fue agregado a el carrito
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <!-- 13 -->  
+        <div class="card">
+          <img src="./IMG/soya.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">Soya / Soja</h5>
+            <p class="card-text text-center">Lleva 1 Kl por tan solo $6,430</p>
+            <button id="liveToastBtn13" type="button" class="btn btn-warning" marcador="13">Agregar 🛒</button>
+            <div class="position-fixed bottom-0 start-0 p-3" style="z-index: 11">
+              <div id="liveToast13" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                  <img src="./IMG/mercado.png" class="rounded me-2" alt="...">
+                  <strong class="me-auto">CARRITO</strong>
+                  <small>Hace 1 segundo</small>
+                  <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                  Su producto fue agregado a el carrito
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 14 -->  
+        <div class="card">
+          <img src="./IMG/lenteja.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">Lenteja</h5>
+            <p class="card-text text-center">Lleva 1 Kl por tan solo $1,115</p>
+            <button id="liveToastBtn14" type="button" class="btn btn-warning" marcador="14">Agregar 🛒</button>
+            <div class="position-fixed bottom-0 start-0 p-3" style="z-index: 11">
+              <div id="liveToast14" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                  <img src="./IMG/mercado.png" class="rounded me-2" alt="...">
+                  <strong class="me-auto">CARRITO</strong>
+                  <small>Hace 1 segundo</small>
+                  <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                  Su producto fue agregado a el carrito
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 15 -->  
+        <div class="card">
+          <img src="./IMG/judias.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">Judias</h5>
+            <p class="card-text text-center">Lleva 1 Kl por tan solo $3,324</p>
+            <button id="liveToastBtn15" type="button" class="btn btn-warning" marcador="15">Agregar 🛒</button>
+            <div class="position-fixed bottom-0 start-0 p-3" style="z-index: 11">
+              <div id="liveToast15" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                  <img src="./IMG/mercado.png" class="rounded me-2" alt="...">
+                  <strong class="me-auto">CARRITO</strong>
+                  <small>Hace 1 segundo</small>
+                  <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                  Su producto fue agregado a el carrito
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 16 -->  
+        <div class="card">
+          <img src="./IMG/guisantes.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">Guisantes </h5>
+            <p class="card-text text-center">Lleva 1 Kl por tan solo $2,490</p>
+            <button id="liveToastBtn16" type="button" class="btn btn-warning" marcador="16">Agregar 🛒</button>
+            <div class="position-fixed bottom-0 start-0 p-3" style="z-index: 11">
+              <div id="liveToast16" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                  <img src="./IMG/mercado.png" class="rounded me-2" alt="...">
+                  <strong class="me-auto">CARRITO</strong>
+                  <small>Hace 1 segundo</small>
+                  <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                  Su producto fue agregado a el carrito
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 17 -->  
+        <div class="card">
+          <img src="./IMG/frijol.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">Frijol rojo</h5>
+            <p class="card-text text-center">Lleva 1 Kl por tan solo $2,760</p>
+            <button id="liveToastBtn17" type="button" class="btn btn-warning" marcador="17">Agregar 🛒</button>
+            <div class="position-fixed bottom-0 start-0 p-3" style="z-index: 11">
+              <div id="liveToast17" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                  <img src="./IMG/mercado.png" class="rounded me-2" alt="...">
+                  <strong class="me-auto">CARRITO</strong>
+                  <small>Hace 1 segundo</small>
+                  <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                  Su producto fue agregado a el carrito
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 18 -->  
+        <div class="card">
+          <img src="./IMG/garbanzo.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">Garbanzo</h5>
+            <p class="card-text text-center">Lleva 1 Kl por tan solo $3,750</p>
+            <button id="liveToastBtn18" type="button" class="btn btn-warning" marcador="18">Agregar 🛒</button>
+            <div class="position-fixed bottom-0 start-0 p-3" style="z-index: 11">
+              <div id="liveToast18" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                  <img src="./IMG/mercado.png" class="rounded me-2" alt="...">
+                  <strong class="me-auto">CARRITO</strong>
+                  <small>Hace 1 segundo</small>
+                  <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                  Su producto fue agregado a el carrito
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 19 -->  
+        <div class="card">
+          <img src="./IMG/res.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">Carne de res</h5>
+            <p class="card-text text-center">Lleva 1 Kl por tan solo $24,958</p>
+            <button id="liveToastBtn19" type="button" class="btn btn-success" marcador="19">Agregar 🛒</button>
+            <div class="position-fixed bottom-0 start-0 p-3" style="z-index: 11">
+              <div id="liveToast19" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                  <img src="./IMG/mercado.png" class="rounded me-2" alt="...">
+                  <strong class="me-auto">CARRITO</strong>
+                  <small>Hace 1 segundo</small>
+                  <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                  Su producto fue agregado a el carrito
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 20 -->  
+        <div class="card">
+          <img src="./IMG/cerdo.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">Carne de cerdo</h5>
+            <p class="card-text text-center">Lleva 1 Kl por tan solo $16,254</p>
+            <button id="liveToastBtn20" type="button" class="btn btn-success" marcador="20">Agregar 🛒</button>
+            <div class="position-fixed bottom-0 start-0 p-3" style="z-index: 11">
+              <div id="liveToast20" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                  <img src="./IMG/mercado.png" class="rounded me-2" alt="...">
+                  <strong class="me-auto">CARRITO</strong>
+                  <small>Hace 1 segundo</small>
+                  <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                  Su producto fue agregado a el carrito
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 21 -->  
+        <div class="card">
+          <img src="./IMG/muslo.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">Muslos de pollo</h5>
+            <p class="card-text text-center">Lleva 1 Kl por tan solo $15,100</p>
+            <button id="liveToastBtn21" type="button" class="btn btn-success" marcador="21">Agregar 🛒</button>
+            <div class="position-fixed bottom-0 start-0 p-3" style="z-index: 11">
+              <div id="liveToast21" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                  <img src="./IMG/mercado.png" class="rounded me-2" alt="...">
+                  <strong class="me-auto">CARRITO</strong>
+                  <small>Hace 1 segundo</small>
+                  <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                  Su producto fue agregado a el carrito
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 22 -->  
+          <div class="card">
+            <img src="./IMG/salchichon.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-center">Barra de salchichon cervecero</h5>
+              <p class="card-text text-center">Llevalo por tan solo $16,590</p>
+              <button id="liveToastBtn22" type="button" class="btn btn-success" marcador="22">Agregar 🛒</button>
+              <div class="position-fixed bottom-0 start-0 p-3" style="z-index: 11">
+                <div id="liveToast22" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                  <div class="toast-header">
+                    <img src="./IMG/mercado.png" class="rounded me-2" alt="...">
+                    <strong class="me-auto">CARRITO</strong>
+                    <small>Hace 1 segundo</small>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                  </div>
+                  <div class="toast-body">
+                    Su producto fue agregado a el carrito
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <!-- 23 -->  
+        <div class="card">
+          <img src="./IMG/salchicha.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">Salchicha X 6</h5>
+            <p class="card-text text-center">Llevalo por tan solo $5,320</p>
+            <button id="liveToastBtn23" type="button" class="btn btn-success" marcador="23">Agregar 🛒</button>
+            <div class="position-fixed bottom-0 start-0 p-3" style="z-index: 11">
+              <div id="liveToast23" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                  <img src="./IMG/mercado.png" class="rounded me-2" alt="...">
+                  <strong class="me-auto">CARRITO</strong>
+                  <small>Hace 1 segundo</small>
+                  <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                  Su producto fue agregado a el carrito
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 24 -->  
+        <div class="card">
+          <img src="./IMG/pechuga.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">Pechuga de pollo</h5>
+            <p class="card-text text-center">Lleva 1 Kl por tan solo $20,400</p>
+            <button id="liveToastBtn24" type="button" class="btn btn-success" marcador="24">Agregar 🛒</button>
+            <div class="position-fixed bottom-0 start-0 p-3" style="z-index: 11">
+              <div id="liveToast24" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                  <img src="./IMG/mercado.png" class="rounded me-2" alt="...">
+                  <strong class="me-auto">CARRITO</strong>
+                  <small>Hace 1 segundo</small>
+                  <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                  Su producto fue agregado a el carrito
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 25 -->  
+        <div class="card">
+          <img src="./IMG/yogurt.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">Yogurt</h5>
+            <p class="card-text text-center">Lleva 1 Ltro. por tan solo $7,000</p>
+            <button id="liveToastBtn25" type="button" class="btn btn-info" marcador="25">Agregar 🛒</button>
+            <div class="position-fixed bottom-0 start-0 p-3" style="z-index: 11">
+              <div id="liveToast25" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                  <img src="./IMG/mercado.png" class="rounded me-2" alt="...">
+                  <strong class="me-auto">CARRITO</strong>
+                  <small>Hace 1 segundo</small>
+                  <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                  Su producto fue agregado a el carrito
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 26 -->  
+        <div class="card">
+          <img src="./IMG/queso.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">Queso crema</h5>
+            <p class="card-text text-center">Lleva 1 Lbra. por tan solo $19,996</p>
+            <button id="liveToastBtn26" type="button" class="btn btn-info" marcador="26">Agregar 🛒</button>
+            <div class="position-fixed bottom-0 start-0 p-3" style="z-index: 11">
+              <div id="liveToast26" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                  <img src="./IMG/mercado.png" class="rounded me-2" alt="...">
+                  <strong class="me-auto">CARRITO</strong>
+                  <small>Hace 1 segundo</small>
+                  <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                  Su producto fue agregado a el carrito
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 27 -->  
+        <div class="card">
+          <img src="./IMG/mantequilla.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">Mantequilla</h5>
+            <p class="card-text text-center">Lleva 1 Lbra. por tan solo $7,250</p>
+            <button id="liveToastBtn27" type="button" class="btn btn-info" marcador="27">Agregar 🛒</button>
+            <div class="position-fixed bottom-0 start-0 p-3" style="z-index: 11">
+              <div id="liveToast27" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                  <img src="./IMG/mercado.png" class="rounded me-2" alt="...">
+                  <strong class="me-auto">CARRITO</strong>
+                  <small>Hace 1 segundo</small>
+                  <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                  Su producto fue agregado a el carrito
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 28 -->  
+        <div class="card">
+          <img src="./IMG/leche.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">Leche</h5>
+            <p class="card-text text-center">Lleva 1 Ltro. por tan solo $3,300</p>
+            <button id="liveToastBtn28" type="button" class="btn btn-info" marcador="28">Agregar 🛒</button>
+            <div class="position-fixed bottom-0 start-0 p-3" style="z-index: 11">
+              <div id="liveToast28" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                  <img src="./IMG/mercado.png" class="rounded me-2" alt="...">
+                  <strong class="me-auto">CARRITO</strong>
+                  <small>Hace 1 segundo</small>
+                  <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                  Su producto fue agregado a el carrito
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 29 -->  
+        <div class="card">
+          <img src="./IMG/cuajada.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">Cuajada</h5>
+            <p class="card-text text-center">Lleva 1 lbra. por tan solo $14,900</p>
+            <button id="liveToastBtn29" type="button" class="btn btn-info" marcador="29">Agregar 🛒</button>
+            <div class="position-fixed bottom-0 start-0 p-3" style="z-index: 11">
+              <div id="liveToast29" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                  <img src="./IMG/mercado.png" class="rounded me-2" alt="...">
+                  <strong class="me-auto">CARRITO</strong>
+                  <small>Hace 1 segundo</small>
+                  <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                  Su producto fue agregado a el carrito
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 30 -->  
+        <div class="card">
+          <img src="./IMG/huevos.jfif" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">Huevos</h5>
+            <p class="card-text text-center">Lleva 1 cubeta AA por tan solo $15,400</p>
+            <button id="liveToastBtn30" type="button" class="btn btn-info" marcador="30">Agregar 🛒</button>
+            <div class="position-fixed bottom-0 start-0 p-3" style="z-index: 11">
+              <div id="liveToast30" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                  <img src="./IMG/mercado.png" class="rounded me-2" alt="...">
+                  <strong class="me-auto">CARRITO</strong>
+                  <small>Hace 1 segundo</small>
+                  <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                  Su producto fue agregado a el carrito
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  <hr>
+    <!-- FOOTER -->
+      <footer>
+        <div id="foot1" class="text-center">
+          <div class="row-container rd-2 page_1">
+            <div class="row-content">
+              <div class="row" data-role="line">
+                <div data-role="cell" class="colum div-foot" style="width: 33%">
+                  <div id="foot-info" class="colum-content">
+                    <p class="footer-title">MENU PRINCIPAL</p>
+                    <ul class="list-unstyled">
+                      <li>
+                        <a class="foot" href="#">Inicio</a>
+                      </li>
+                      <li>
+                        <a class="foot" href="quienessomos.html">Quienes somos</a>
+                      </li>
+                      <li>
+                        <a class="foot" href="contactanos.html">Contactanos</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div data-role="cell" class="colum div-foot" style="width: 33%">
+                  <div id="foot-info" class="colum-content">
+                    <p class="footer-title">PRODUCTOS</p>
+                    <ul class="list-unstyled">
+                      <li>
+                        <a class="foot" href="frutas.html">Frutas</a>
+                      </li>
+                      <li>
+                        <a class="foot" href="verduras.html">Verduras</a>
+                      </li>
+                      <li>
+                        <a class="foot" href="legumbres.html">Legumbres</a>
+                      </li>
+                      <li>
+                        <a class="foot" href="carnicos.html">Carnicos</a>
+                      </li>
+                      <li>
+                        <a class="foot" href="lacteos.html">Lacteos</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div data-role="cell" class="colum div-foot" style="width: 33%">
+                  <div id="foot-info" class="colum-content">
+                    <p class="footer-title">REDES SOCIALES</p>
+                    <ul class="list-unstyled">
+                      <li>
+                        <a href="https://www.facebook.com/" target="_blank"><img class="redes" src="./IMG/facebook.png" alt="" tabindex="0" class="btn btn-lg btn-danger" role="button" data-bs-toggle="popover" data-bs-trigger="hover" title="FACEBOOK"></a>
+                        
+                      </li>
+                      <li>
+                        <a href="https://www.instagram.com/" target="_blank"><img class="redes" src="./IMG/instagram.png" alt="" tabindex="0" class="btn btn-lg btn-danger" role="button" data-bs-toggle="popover" data-bs-trigger="hover" title="INSTAGRAM"></a>
+                      </li>
+                      <li>
+                        <a href="https://www.whatsapp.com/?lang=es" target="_blank"><img class="redes"  src="./IMG/whatsapp.png" alt="" tabindex="0" class="btn btn-lg btn-danger" role="button" data-bs-toggle="popover" data-bs-trigger="hover" title="WHATSAPP"></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="foot2" class="text-center">
+          <p id="p-foot">"LA HACIENDA, TU MEJOR OPCION"</p>
+        </div>
+      </footer>
+      <script src="./js/index.js"></script>
+      <script src="./js/carro.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
