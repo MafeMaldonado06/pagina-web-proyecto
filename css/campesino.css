@@ -1,0 +1,30 @@
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, form, fieldset, blockquote {
+    padding: 0;
+    margin: 0;
+    /*font-size: 100%;
+    font-weight: normal;*/
+}
+#nav{
+    padding-left: 2%;
+}
+#logo_nav{
+    height: 100px;
+    width: 100dp;
+    margin-left: 50xp;
+}
+#agroexpress{
+    height: 50px;
+    width: auto;
+    position: absolute;
+    padding-left: 6%;
+}
+.rol{
+    color: white;
+}
+#rol_img{
+    height: 50px;
+    width: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
