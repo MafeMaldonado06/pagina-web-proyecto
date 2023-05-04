@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/administrador.css">
+    <link rel="stylesheet" href="./css/general.css">
+    <link rel="shortcut icon" href="./img/logo.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>USUARIOS</title>
+</head>
+<body style="background-image: url(img/fondo.png);">
+  
+    <!-- menu -->
+
+    <nav id="nav" class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <img id="logo_nav" src="./img/logo.png" alt="logo"> 
+            <img id="agroexpress" src="./img/TIPOGRAFIA2.png" alt="agroexpress">
+        </div>
+        <div class="container-fluid">
+            <h4 class="rol">ADMINISTRADOR</h4><br>
+            <img id="rol_img" src="./img/user-interface.png " alt="agricultor">
+        </div>
+
+        <div class="collapse navbar-collapse" id="navegador">
+        <ul class="navbar-nav">
+            <li class="nav-item1 ">
+            <a class="nav-link " href="./admi_productos.html">PRODUCTOS<span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item2 active">
+            <a class="nav-link active" href="#">USUARIOS</a>
+            </li>
+        </ul>
+        </div>
+    </nav>
+    <!-- container1 -->
+    <div id="container" class="text-center">
+        <h1 class="titulo fw-bold">USUARIOS</h1>
+        <hr>
+          <div class="row align-items-start contenido">
+            <div class="col">
+              <img class="img_usu" src="./img/agricultorr.png" alt="">
+            </div>
+            <div class="col">
+            <h5 class="text-center">NOMBRE</h5>
+          </div>
+          <div class="col">
+            <h5 class="text-center">APELLIDO</h5>
+          </div>
+          <div class="col">
+            <h5 class="text-center">CIUDAD</h5>
+          </div>
+          <div class="col">
+            <h5 class="text-center">TELEFONO</h5>
+          </div>
+          <div class="col">
+            <button type="button" class="btn btn-outline-light  boton_agregar" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><img src="./img/editar.png" alt=""></button>
+          </div>
+        </div>
+      </div>
+
+      <div id="container2" class="text-center">
+        <hr>
+          <div class="row align-items-start contenido">
+            <div class="col">
+              <img class="img_usu" src="./img/agricultorr.png" alt="">
+            </div>
+            <div class="col">
+            <h5 class="text-center">NOMBRE</h5>
+          </div>
+          <div class="col">
+            <h5 class="text-center">APELLIDO</h5>
+          </div>
+          <div class="col">
+            <h5 class="text-center">CIUDAD</h5>
+          </div>
+          <div class="col">
+            <h5 class="text-center">TELEFONO</h5>
+          </div>
+          <div class="col">
+            <button type="button" class="btn btn-outline-light  boton_agregar" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><img src="./img/editar.png" alt=""></button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- boton flotante -->
+
+    <div class="contenedor">
+      <button class="botonF1">
+          <img src="./img/opciones.png" alt="">
+      </button>
+      <button class="btn botonF2 bton">
+          <span>+</span>
+      </button>
+  </div>
+    <script src="./js/general.js"></script>
+</body>
+</html>

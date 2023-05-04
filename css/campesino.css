@@ -20,10 +20,100 @@ html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, form, fie
 }
 .rol{
     color: white;
+    margin-top: -10%;
+    margin-left: -15%;
 }
 #rol_img{
     height: 50px;
     width: 50px;
+    display: block;
+    margin-left: -19%;
+    margin-right: auto;
+    margin-top: 5%;
+}
+#navegador{
+    margin-left: -20%;
+    margin-right: 10%;
+}
+
+.nav_link{
+    width: max-content;
+    color: aliceblue;
+    
+}
+
+.nav-item1{
+    margin-left: -40%;
+}
+.nav-item2{
+    margin-left: 40%;
+}
+#cartas{
+    padding: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.card{
+    margin: 1%;
+    width: 18rem;
+}
+.card-img-top{
+    width: 90%;
+    height: 90%;
+}
+.boton_agregar{
+    width: min-content;
+    margin: 1%;
+    margin-left: auto;
+    display: block;
+    float: right;
+    
+}
+
+/* despacho */
+
+.contenido{
+    background-color: #dbddda;
+    color: #146300;
+    margin: 1%;
+    padding: 1%;
+    display: flex;
+    border-radius: 2%;
+    border-color: #146300;
+    flex-wrap: row;
+    justify-content: space-between;
+}
+
+.contenido:hover{
+    background-color: #418522fa;
+    color: #ffffff;
+    margin: 1%;
+    padding: 1%;
+}
+
+    @media only screen and (max-width: 742px){
+    .contenido {
+        display: flex;
+        flex-direction: column;
+
+    }
+    }
+
+.contenido2{
+    background-color: #dbddda;
+    color: #010700;
+    margin: 1%;
+    padding: 1%;
+    display: flex;
+    border-radius: 2%;
+    border-color: #146300;
+    flex-wrap: row;
+    justify-content: space-between;
+}
+.img_desp{
+    width: 50%;
+    height: 50%;
     display: block;
     margin-left: auto;
     margin-right: auto;

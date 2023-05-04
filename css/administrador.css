@@ -1,0 +1,84 @@
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, form, fieldset, blockquote {
+    padding: 0;
+    margin: 0;
+    /*font-size: 100%;
+    font-weight: normal;*/
+}
+#nav{
+    padding-left: 2%;
+}
+#logo_nav{
+    height: 100px;
+    width: 100dp;
+    margin-left: 50xp;
+}
+#agroexpress{
+    height: 50px;
+    width: auto;
+    position: absolute;
+    padding-left: 6%;
+}
+.rol{
+    color: white;
+    margin-top: -10%;
+    margin-left: -15%;
+}
+#rol_img{
+    height: 50px;
+    width: 50px;
+    display: block;
+    margin-left: -19%;
+    margin-right: auto;
+    margin-top: 5%;
+}
+#navegador{
+    margin-left: -20%;
+    margin-right: 10%;
+}
+
+.nav_link{
+    width: max-content;
+    color: aliceblue;
+    
+}
+
+.nav-item1{
+    margin-left: -40%;
+}
+.nav-item2{
+    margin-left: 40%;
+}
+.contenido{
+    background-color: #dbddda;
+    color: #146300;
+    margin: 1%;
+    padding: 1%;
+    display: flex;
+    border-radius: 2%;
+    border-color: #146300;
+    flex-wrap: row;
+    justify-content: space-between;
+}
+
+.contenido:hover{
+    background-color: #54883bfa;
+    color: #ffffff;
+    margin: 1%;
+    padding: 1%;
+}
+
+    @media only screen and (max-width: 742px){
+    .contenido {
+        display: flex;
+        flex-direction: column;
+
+    }
+    }
+
+.img_usu{
+    width: 30%;
+    height: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
