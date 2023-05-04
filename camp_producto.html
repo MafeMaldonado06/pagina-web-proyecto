@@ -48,11 +48,46 @@
                 <div class="modal-dialog">
                     <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="staticBackdropLabel">Título del modal</h5>
+                        <h5 class="modal-title" id="staticBackdropLabel">EDITAR / AGREGAR PRODUCTO</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        ...
+                        <!-- formulario -->
+
+                        <form class="container" id="formulario">
+                            <div class="row">
+                                
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 mb-3 formulario__grupo" id="grupo__producto">
+                                <label for="product" class="formulario__label">PRODUCTO</label>
+                                    <div class="formulario__grupo-input">
+                                    <input type="text" class="formulario__input form-control" name="product" id="product" placeholder="product" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                </div>
+                                <div class="col-md-6 mb-3 formulario__grupo" id="grupo__apellido">
+                                <label for="price" class="formulario__label">PRECIO</label>
+                                    <div class="formulario__grupo-input">
+                                    <input type="text" class="formulario__input form-control" name="price" id="price" placeholder="price" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3 formulario__grupo" id="grupo__documento">
+                                    <div class="formulario__grupo-input">
+                                    <input type="number" class="formulario__input form-control" name="unidad" id="unidad" placeholder="unidad" required>
+                                    </div>
+                                </div>
+                            
+                                <div class="col-md-4 mb-3 formulario__grupo" id="grupo__telefono">
+                                    <label for="cantidad" class="formulario__label">CANTIDAD</label>
+                                    <div class="formulario__grupo-input">
+                                    <input type="text" class="formulario__input form-control" name="cantidad" id="cantidad" placeholder="cantidad">
+                                </div>
+                            </div>
+                            
+                
+                        </form>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
