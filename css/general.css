@@ -12,12 +12,43 @@ html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, form, fie
     width: 100dp;
     margin-left: 50xp;
 }
+@media only screen and (max-width: 500px) {
+  #logo_nav {
+    height: 80px;
+    width: 80px;
+  }
+}
 #agroexpress{
     height: 50px;
     width: auto;
     position: absolute;
     padding-left: 6%;
 }
+  @media only screen and (max-width: 1000px) {
+    #agroexpress {
+      padding-left: 10%;
+    }
+  }
+  @media only screen and (max-width: 750px) {
+    #agroexpress {
+      height: 40px;
+      padding-left: 14%;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    #agroexpress {
+      height: 35px;
+      padding-left: 17%;
+    }
+  }
+
+  @media only screen and (max-width: 450px) {
+    #agroexpress {
+      display: none;
+    
+    }
+  }
+
 .rol{
     color: white;
     margin-top: -10%;
@@ -52,9 +83,31 @@ html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, form, fie
   margin-left: -40%;
   width: max-content;
 }
+
+  @media only screen and (max-width: 1000px) {
+    .nav-item3 {
+      margin-left: 10px;
+      margin-right: 10px;
+      width: auto;
+      margin-top: 1%;
+      margin-bottom: 1%;
+    
+    }
+  }
 .nav-item4{
   margin-left: 10px;
 }
+
+  @media only screen and (max-width: 1000px) {
+    .nav-item4 {
+      margin-left: 10px;
+      margin-right: 10px;
+      width: auto;
+      margin-top: 1%;
+      margin-bottom: 1%;
+    }
+  }
+
 #cartas{
   padding: 2%;
   display: flex;
@@ -63,8 +116,32 @@ html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, form, fie
 }
 .card{
   margin: 1%;
-  width: 18rem;
+  width: 288px;
 }
+  @media only screen and (max-width: 1000px) {
+    .card {
+      margin: 1%;
+      width: 260px;
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    .card {
+      margin: 1%;
+      width: 200px;
+    }
+    .card-img-top2{
+      width: 30%;
+      height: 30%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 4%;
+    }
+    .texto-carta{
+      font-size: 10px;
+    }
+  }
 .card-img-top{
   width: 90%;
   height: 90%;
@@ -179,5 +256,5 @@ html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, form, fie
     padding: 12px 20px;
     bottom: 20px;
     right: 20px;
-    }
+    }                                                        
 }
