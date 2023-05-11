@@ -4,33 +4,42 @@ html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, form, fie
     /*font-size: 100%;
     font-weight: normal;*/
 }
+
+.bandeja{
+    top: 0;
+    right: -300px;
+    width: 15%;
+    position: fixed;
+    height: 100vh;
+}
+
+.btn-close{
+    font-size: 25px;
+}
+
 #nav{
     padding-left: 2%;
+    background-color: #010700;
 }
+
 #logo_nav{
     height: 100px;
     width: 100dp;
     margin-left: 50xp;
 }
+
 #agroexpress{
     height: 50px;
     width: auto;
     position: absolute;
     padding-left: 6%;
 }
-.rol{
-    color: white;
-    margin-top: -10%;
-    margin-left: -15%;
+
+.boton_img{
+    border-radius: 50%;
+    border: none;
 }
-#rol_img{
-    height: 50px;
-    width: 50px;
-    display: block;
-    margin-left: -19%;
-    margin-right: auto;
-    margin-top: 5%;
-}
+
 #navegador{
     margin-left: -20%;
     margin-right: 10%;
@@ -42,12 +51,31 @@ html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, form, fie
     
 }
 
-.nav-item1{
-    margin-left: -40%;
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.nav-item2{
-    margin-left: 40%;
+
+.nav li{
+    text-decoration: none;
+    margin-inline-start: 12%;
+    font-size: 20px;
 }
+
+.nav li a{
+    color: white;
+}
+
+.item_nav:hover{
+    color: gray;
+    border-bottom: 2px solid #146300;
+}
+
+.nav li a:hover{
+    color: gray;
+}
+
 #cartas{
     padding: 2%;
     display: flex;
@@ -64,11 +92,11 @@ html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, form, fie
 }
 .boton_agregar{
     width: min-content;
+    height: auto;
     margin: 1%;
     margin-left: auto;
     display: block;
     float: right;
-    
 }
 
 /* despacho */

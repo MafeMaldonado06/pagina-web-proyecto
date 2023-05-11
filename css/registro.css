@@ -4,32 +4,39 @@ html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, form, fie
     /*font-size: 100%;
     font-weight: normal;*/
 }
+
+body{
+    background-color: #e2e2e2;
+    background-image: url(/img/FondoOpcion2.svg);
+}
+
 #nav{
     padding-left: 2%;
+    background-color: #000;
 }
+
 #logo_nav{
     height: 100px;
     width: 100dp;
     margin-left: 50xp;
 }
+
 #agroexpress{
     height: 50px;
     width: auto;
     position: absolute;
     padding-left: 6%;
 }
-#usua{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 1%;
+
+.usua{
+    font-size: 60px;
 }
+
 .cont{
     background-color: whitesmoke;
-    margin: 20%;
-    border-radius: 3%;
-    border: 3px solid #457317;
+    border: 2px solid #457317;
 }
+
 .cont2{
     background-color: whitesmoke;
     margin-left: 20%;
@@ -37,6 +44,7 @@ html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, form, fie
     border-radius: 3%;
     border: 3px solid #457317;
 }
+
 label{
     color: #457317;
     font-size: 200XP;
@@ -44,13 +52,4 @@ label{
     display:flex;
     justify-content: center;
     align-items: center;
-}
-#Enviar{
-    display: block;
-    margin-left: auto;
-    margin-right: auto; 
-    border: #173b06 solid 2px; 
-    background-color: #387c2d; 
-    color: #ffff;
-    padding: 2px; 
 }
