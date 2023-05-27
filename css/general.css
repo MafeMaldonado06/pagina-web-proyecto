@@ -5,14 +5,16 @@ html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, form, fie
     font-weight: normal;*/
 }
 
+body{
+  
+  background-color: #71EB7C;
+}
+
 *{
   text-decoration: none;
 }
 
-#nav{
-    padding-left: 2%;
-    background-color: #000000;
-}
+
 #logo_nav{
     height: 100px;
     width: 100dp;
@@ -25,35 +27,60 @@ html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, form, fie
   }
 }
 #agroexpress{
-    height: 50px;
-    width: auto;
-    position: absolute;
-    padding-left: 6%;
+  height: 50px;
+  width: auto;
+  margin-right: 500px;
+  
 }
-  @media only screen and (max-width: 1000px) {
-    #agroexpress {
-      padding-left: 10%;
-    }
+@media only screen and (max-width: 1240px) {
+  #agroexpress {
+    margin-right: 450px;
   }
-  @media only screen and (max-width: 750px) {
-    #agroexpress {
-      height: 40px;
-      padding-left: 14%;
-    }
+}
+@media only screen and (max-width: 1188px) {
+  #agroexpress {
+    margin-right: 400px;
   }
-  @media only screen and (max-width: 500px) {
-    #agroexpress {
-      height: 35px;
-      padding-left: 17%;
-    }
+}
+@media only screen and (max-width: 1135px) {
+  #agroexpress {
+    margin-right: 350px;
   }
+}
+@media only screen and (max-width: 1080px) {
+  #agroexpress {
+    margin-right: 300px;
+  }
+}
+@media only screen and (max-width: 1040px) {
+  #agroexpress {
+    margin-right: 250px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  #agroexpress {
+    padding-left: 10%;
+  }
+}
+@media only screen and (max-width: 750px) {
+  #agroexpress {
+    height: 40px;
+    padding-left: 14%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #agroexpress {
+    height: 35px;
+    padding-left: 17%;
+  }
+}
 
-  @media only screen and (max-width: 450px) {
-    #agroexpress {
-      display: none;
-    
-    }
+@media only screen and (max-width: 450px) {
+  #agroexpress {
+    display: none;
+  
   }
+}
 
 .rol{
     color: white;
@@ -67,6 +94,7 @@ html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, form, fie
     margin-left: -19%;
     margin-right: auto;
     margin-top: 5%;
+    
 }
 #navegador{
     margin-left: -20%;
@@ -78,16 +106,17 @@ html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, form, fie
     color: aliceblue;
     
 }
+.navbar-brand{
+  margin-left: 1%;
+  font-weight: 500%;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
 .nav-item1{
     margin-left: -40%;
 }
 .nav-item2{
     margin-left: 40%;
-}
-.nav-item3{
-  margin-left: -40%;
-  width: max-content;
 }
 
   @media only screen and (max-width: 1000px) {
@@ -118,7 +147,6 @@ html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, form, fie
 .nav-item3:hover,.nav-item4:hover{
   border-bottom: 2px solid #53704B;
 }
-
 #cartas{
   padding: 2%;
   display: flex;
@@ -128,7 +156,12 @@ html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, form, fie
 .card{
   margin: 1%;
   width: 288px;
-  box-shadow: 0 0 30px gainsboro;
+  box-shadow: 0 0 30px grey;
+}
+.card:hover{
+  margin: 1%;
+  width: 290px;
+  box-shadow: 0 0 30px #058100;
 }
   @media only screen and (max-width: 1000px) {
     .card {
@@ -250,15 +283,13 @@ html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, form, fie
     transform:scale(1);
   }
   .btn-flotante {
-    font-size: 16px; 
-    font-weight: bold;
     color: #ffffff; 
     border-radius: 5px; 
-    background-color: #000000; 
+    background-color: #037701a3; 
     padding: 18px 30px; 
     position: fixed;
-    bottom: 40px;
-    right: 40px;
+    bottom: 30px;
+    right:30px;
     transition: all 300ms ease 0ms;
     box-shadow: 0px 8px 15px #ffffff1a;
     z-index: 99;
@@ -275,4 +306,64 @@ html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, form, fie
     bottom: 20px;
     right: 20px;
     }                                                        
+}
+#foot1{
+  background-color: #363131;
+  position: relative;
+  padding: 20px;
+}
+
+  @media only screen and (max-width: 400px){
+  .div-foot {
+      width: 25%;
+  }
+  }
+
+.footer-title{
+  color: #407f44;
+  font-weight: 1000px;
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+  @media only screen and (max-width: 300px){
+  .footer-title {
+      font-size: 14px;
+  }
+  }
+
+a.foot{
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+}
+a.foot:hover{
+  color: #1bc805;
+}
+
+  @media only screen and (max-width: 400px){
+  a.foot {
+      font-size: 15px;
+  }
+  }
+
+img.redes{
+  margin: 5px;
+}
+
+img.redes:hover{
+  margin: 5px;
+  width: 60px;
+}
+
+#foot2{
+  background-color: #438006;
+  padding: 2px;
+  color: #ffffff;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.p-foot{
+  font-weight: 600px;
 }
