@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-    $('#Iniciar').on("click", function(){
+    $('#Enviar').on("click", function(){
         let documento = $("#documentos").val();
         let password = $("#contraseña").val();
 
