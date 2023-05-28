@@ -11,6 +11,10 @@ $(document).ready(function(){
             success : function(respuesta){
                 if(respuesta.rol_Id == 1){
                     window.location.href= "inicioComprador.html"
+                }else if(respuesta.rol_Id == 2){
+                    window.location.href= "camp_producto.html"
+                }else if(respuesta.rol_Id == 3){
+                    window.location.href= "camp_producto.html"
                 }
             }
         });
