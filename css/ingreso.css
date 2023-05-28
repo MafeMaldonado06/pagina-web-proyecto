@@ -19,12 +19,33 @@ body{
     width: 100dp;
     margin-left: 50xp;
 }
-#agroexpress{
-    height: 50px;
-    width: auto;
-    position: absolute;
-    padding-left: 6%;
-}
+@media only screen and (max-width: 500px) {
+    #logo_nav {
+      height: 80px;
+      width: 80px;
+    }
+  }
+  #agroexpress{
+      height: 50px;
+      width: auto;
+  }
+    
+    @media only screen and (max-width: 750px) {
+      #agroexpress {
+        height: 40px;
+      }
+    }
+    @media only screen and (max-width: 500px) {
+      #agroexpress {
+        height: 35px;
+      }
+    }
+  
+    @media only screen and (max-width: 450px) {
+      #agroexpress {
+        display: none;
+      }
+    }
 #usua{
     display: block;
     margin-left: auto;
@@ -33,7 +54,8 @@ body{
 }
 .cont{
     background-color: whitesmoke;
-
+    margin-top: 7%;
+    margin-bottom: 7%;
     border: 2px solid #457317;
 }
 .cont2{
@@ -45,9 +67,75 @@ body{
 }
 label{
     color: #457317;
-    font-size: 200XP;
+    font-size: 15px;
     font-weight: bold; 
     display:flex;
     justify-content: center;
     align-items: center;
 }
+#Iniciar{
+    background-color: #438006;
+    font-size: 15px;
+    width: max-content;
+}
+
+#foot1{
+    background-color: #363131;
+    position: relative;
+    padding: 20px;
+  }
+  
+    @media only screen and (max-width: 400px){
+    .div-foot {
+        width: 25%;
+    }
+    }
+  
+  .footer-title{
+    color: #407f44;
+    font-weight: 1000px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+    @media only screen and (max-width: 300px){
+    .footer-title {
+        font-size: 14px;
+    }
+    }
+  
+  a.foot{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  a.foot:hover{
+    color: #1bc805;
+  }
+  
+    @media only screen and (max-width: 400px){
+    a.foot {
+        font-size: 15px;
+    }
+    }
+  
+  img.redes{
+    margin: 5px;
+  }
+  
+  img.redes:hover{
+    margin: 5px;
+    width: 60px;
+  }
+  
+  #foot2{
+    background-color: #438006;
+    padding: 2px;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  .p-foot{
+    font-weight: 600px;
+  }
