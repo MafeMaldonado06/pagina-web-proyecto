@@ -233,6 +233,15 @@ body{
   float: right;
   
 }
+.boton_agregar_desplegable{
+  color: white;
+  margin-top: 20px;
+  background-color: #19ad05;
+  margin-left: 35px;
+  border: solid #009688;
+  border-radius: 20px;
+  
+}
   header{
     height:170px;
     color:#FFF;
