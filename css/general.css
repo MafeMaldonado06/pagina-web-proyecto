@@ -5,6 +5,22 @@ html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, form, fie
     font-weight: normal;*/
 }
 
+.bandeja{
+  top: 0;
+  right: -300px;
+  width: 15%;
+  position: fixed;
+  height: 100vh;
+}
+
+.bandeja2{
+  top: 0;
+  right: -300px;
+  width: 15%;
+  position: fixed;
+  height: 100vh;
+}
+
 body{
   
   background-color: #71EB7C;
@@ -210,9 +226,9 @@ body{
 }
 
 .boton_agregar{
-  width: min-content;
+  
   margin: 1%;
-  margin-left: auto;
+  margin-right: 20px;
   display: block;
   float: right;
   

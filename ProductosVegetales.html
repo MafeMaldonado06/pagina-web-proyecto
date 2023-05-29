@@ -6,40 +6,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-<link rel="stylesheet" href="css/inicioComprador.css">    
-<title>Inico Comprador</title>
+    <link rel="stylesheet" href="css/inicioComprador.css">
+    <link rel="stylesheet" href="css/general.css">
+
+    <!--Jquery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!--Ajax-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>Productos Frutas</title>
 </head>
-<nav id="navegacion">
-
-<img id="logo" src="img/logo.png" alt="" srcset="">
-<img id="tipografia" src="img/tipografia.png" alt="" srcset="">
-<h2 id="usuario">COMPRADOR</h2>
-<img id="usuarioIMG" src="img/usuarioComprador.png" alt="" srcset="">
-
-<a href="inicioComprador.html" id="enlaces">INICIO
-</a>
 
 
-<div class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" id="enlaces2" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-        TIPOS DE <br> PRODUCTOS
-    </a>
-    <ul class="dropdown-menu"  aria-labelledby="navbarDropdown">
-        <li><a class="dropdown-item"  href="ProductosFrutas.html">Frutas</a></li>
-        <li><a class="dropdown-item"  href="ProductosVegetales.html">Vegetales</a></li>
-    </ul>
-</div>
+<a href="#nav" class="btn-flotante" tabindex="0"  role="button" data-bs-toggle="popover" data-bs-trigger="hover" title="volver al navegador"><img src="./IMG/flecha.png" alt=""></a>
 
-<a href="MisProductosComprador.html" id="enlaces">MIS PEDIDOS
-</a>
-<a href="CanastaCompraComprador.html"><img id="carrito" src="img/carritoCompra.png" alt="" srcset=""></a>
-</nav>
+    <!-- NAV -->
+    <nav id="nav" class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a href="inicioComprador.html"><img id="logo_nav" src="./img/logo.png" alt="logo"> </a>
+        <a class="navbar-brand" href="#"><img id="agroexpress" src="./img/TIPOGRAFIA2.png" alt="agroexpress"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent"> 
+          <div class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="enlaces2" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                TIPOS DE <br> PRODUCTOS
+            </a>
+            <ul class="dropdown-menu"  aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item"  href="ProductosFrutas.html">Frutas</a></li>
+                <li><a class="dropdown-item"  href="ProductosVegetales.html">Vegetales</a></li>
+            </ul>
+          </div>
+          
+          <a href="MisProductosComprador.html" id="enlaces">MIS PEDIDOS
+          </a>
+          <div id="btn_img">
+            <img id="usuarioIMG" src="img/usuarioComprador.png" alt="imagen usuario" srcset="">
+          </div>
+          <div id="btn_img_carrito">
+          <img id="carrito" src="img/carritoCompra.png" alt="" srcset="">
+          </div>
+          
+        </div>
+      </div>
+    </nav>
+
+    <!--Opciones perfil bandeja-->
+    <div class="bandeja bg-light" id="bandeja">
+        <div class="d-flex justify-content-end my-2">
+            <button class="btn-close" id="btn-cerrar"></button>
+        </div>
+  
+        <div class="bg-info">
+            <div class="boton_img">
+                <img class="" src="img/usuario.png" alt="">
+            </div>
+        </div>
+    </div>
+  
+    <div class="bandeja bg-light" id="bandeja2">
+      <div class="d-flex justify-content-end my-2">
+          <button class="btn-close" id="btn-cerrar2"></button>
+      </div>
+  
+      <div class="bg-info">
+          <div class="boton_img">
+              <img class="" src="img/carritoCompra.png" alt="">
+          </div>
+      </div>
+  </div>
+
+
 <body style="background-image: url(imagenes/fondo.png);">
 
 
 
     <div id="Titulacion_productos">
-        <h1>VERDURAS</h1>
+        <h1>FRUTAS</h1>
     </div>
 
     
@@ -49,93 +94,78 @@
     <div class=" row">
 
 
-      <div class="col-sm my-2" >
-        <div class="card " style="width: 16rem; " >
-          <img src="img/TOMATE.JPG" class="card-img-top" alt="..." style="height: 170px;  ">
-          <div class="card-body">
-            <p class="card-text">Banano </p>
-            <li>$10.000</li>
-            <li>1kg</li>
-            <button type="button" class="btn btn-outline-success  boton_agregar" data-bs-toggle="modal" data-bs-target="#staticBackdrop">AGREGAR AL CARRITO<img src="./img/editar.png" alt=""></button>
+        <div class="col-sm my-2" >
+            <div class="card " style="width: 16rem; " >
+              <img src="img/TOMATE.JPG" class="card-img-top" alt="..." style="height: 150px; width: 254px;" >
+              <div class="card-body">
+                <p class="card-text">Tomate</p>
+                <li>$10.000</li>
+                <li>1kg</li>
+                <button type="button" class="btn btn-outline-success  boton_agregar" data-bs-toggle="modal" data-bs-target="#staticBackdrop">AGREGAR AL CARRITO</button>
 
-        <!-- Modal -->
-            <div class="modal fade " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="staticBackdropLabel">AGREGA UN PRODUCO</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                        <!-- formulario -->
+            <!-- Modal -->
+                <div class="modal fade " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">AGREGA UN PRODUCO</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                            <!-- formulario -->
 
-                            <form class="container" id="formulario">
+                                <form class="container" id="formulario">
+                                        
+                                    <div ID="ContPreciosProducForm">
+                                        <div class="col-md-12 mb-3 formulario__grupo" id="grupo__producto">
+                                                <img id="imgFormProduc" src="img/TOMATE.JPG" alt="" srcset="" style="height: 120px;">
+                                        </div>
                                     
-                                <div ID="ContPreciosProducForm">
-                                    <div class="col-md-12 mb-3 formulario__grupo" id="grupo__producto">
-                                            <img id="imgFormProduc" src="img/TOMATE.JPG" alt="" srcset="" style="height: 100px;">
-                                    </div>
-                                
-                                <div class="row">
-                                    <div class="col-md-6 mb-3 formulario__grupo" id="ContPreciosProducForm">
-                                        <label for="price" class="formulario__label" id="ContPreciosProducForm">PRECIO</label>
-                                        <label for="price" class="formulario__label" id="ContPreciosProducForm">$3.000</label>    
-                                            </div>
-                                    </div>
-                                  
-                                
-                                    <div class="col-md-4 mb-3 formulario__grupo" id="ContPreciosProducForm">
-                                        <label for="cantidad" class="formulario__label" id="ContPreciosProducForm">CANT.DISP</label>
-                                        <label for="cantidad" class="formulario__label" id="cantidadDsipForm"><br>50</label>
-                                    </div>
-                                  </div>
                                     <div class="row">
-                                      <div class="col-md-6 mb-3 formulario__grupo" id="">
-                                          <img id="imgCampForm" src="img/campesino.png" alt="" srcset="">
-                                          <label id="FormNombreCamp" for="price" class="formulario__label">NOMBRE DEL COMPRADOR</label>
-                                          <label for="price" class="formulario__label">AGRICULTOR DE MANZANAS Y PERAS</label>
-                                          <label for="price" class="formulario__label">UBICADO EN MADRID, CUNDINAMARCA</label>      
-                                              </div>
+                                        <div class="col-md-6 mb-3 formulario__grupo" id="ContPreciosProducForm">
+                                            <label for="price" class="formulario__label" id="ContPreciosProducForm">PRECIO</label>
+                                            <label for="price" class="formulario__label" id="ContPreciosProducForm">$3.000</label>    
+                                                </div>
+                                        </div>
+                                      
+                                    
+                                        <div class="col-md-4 mb-3 formulario__grupo" id="ContPreciosProducForm">
+                                            <label for="cantidad" class="formulario__label" id="ContPreciosProducForm">CANT.DISP</label>
+                                            <label for="cantidad" class="formulario__label" id="cantidadDsipForm"><br>50</label>
+                                        </div>
                                       </div>
-
                                         <div class="row">
-                                      <div class="formulario__grupo-input">
-                                        <label for="price" class="formulario__label">CANTIDAD</label>
-                                        <input type="number" class="formulario__input form-control" name="cantidad" id="cantidad" placeholder="cantidad">
+                                          <div class="col-md-6 mb-3 formulario__grupo" id="">
+                                              <img id="imgCampForm" src="img/campesino.png" alt="" srcset="">
+                                              <label id="FormNombreCamp" for="price" class="formulario__label">NOMBRE DEL COMPRADOR</label>
+                                              <label for="price" class="formulario__label">AGRICULTOR DE MANZANAS Y PERAS</label>
+                                              <label for="price" class="formulario__label">UBICADO EN MADRID, CUNDINAMARCA</label>      
+                                                  </div>
+                                          </div>
+
+                                            <div class="row">
+                                          <div class="formulario__grupo-input">
+                                            <label for="price" class="formulario__label">CANTIDAD</label>
+                                            <input type="number" class="formulario__input form-control" name="cantidad" id="cantidad" placeholder="cantidad">
+                                        </div>
                                     </div>
-                                </div>
 
 
-                                <div class="modal-footer">
-                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                                  <button type="button" class="btn btn-primary">AGREGAR</button>
-                              </div>
-                            </form>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                      <button type="button" class="btn btn-primary">AGREGAR</button>
+                                  </div>
+                                </form>
+                            </div>
+                            
                         </div>
-                        
                     </div>
                 </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
 
-      
-    </div>
-
-         
           
-
-
-
-
-
-
-
-
-
-
-
         </div>
   
 
@@ -143,5 +173,7 @@
 </body>
 
 
-<script src="/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+<script src="./js/general.js"></script>
+<script src="js/Jquery_Comprador.js"></script>
+<script src="js/Jquery_Canasta_Comprador.js"></script>
 </html>
