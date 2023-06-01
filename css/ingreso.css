@@ -16,8 +16,8 @@ body{
 }
 #logo_nav{
     height: 100px;
-    width: 100dp;
-    margin-left: 50xp;
+    width: 100px;
+    margin-left: 50;
 }
 @media only screen and (max-width: 500px) {
     #logo_nav {
