@@ -4,6 +4,9 @@ html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, form, fie
     /*font-size: 100%;
     font-weight: normal;*/
 }
+*{
+    text-decoration: none;
+  }
 #nav{
     padding-left: 2%;
 }
@@ -12,41 +15,107 @@ html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, form, fie
     width: 100dp;
     margin-left: 50xp;
 }
-#agroexpress{
+@media only screen and (max-width: 500px) {
+    #logo_nav {
+      height: 80px;
+      width: 80px;
+    }
+  }
+#agroexpresss{
     height: 50px;
     width: auto;
-    position: absolute;
-    padding-left: 6%;
-}
+    margin-right: 90px;
+    
+  }
+  @media only screen and (max-width: 1240px) {
+    #agroexpresss {
+      margin-right: 80px;
+    }
+  }
+  @media only screen and (max-width: 1188px) {
+    #agroexpresss {
+        margin-right: 50px;
+    }
+  }
+  @media only screen and (max-width: 1135px) {
+    #agroexpresss {
+      margin-right: 40px;
+    }
+  }
+  @media only screen and (max-width: 1080px) {
+    #agroexpresss {
+      margin-right: 30px;
+    }
+  }
+  @media only screen and (max-width: 1040px) {
+    #agroexpresss {
+      margin-right: 20px;
+    }
+  }
+  @media only screen and (max-width: 1000px) {
+    #agroexpresss {
+      padding-left: 10%;
+    }
+  }
 .rol{
     color: white;
-    margin-top: -10%;
-    margin-left: -15%;
+    margin-top: -4%;
 }
+    @media only screen and (max-width: 1000px) {
+        .rol {
+        font-size: 20px;
+        
+        }
+    }
 #rol_img{
     height: 50px;
     width: 50px;
     display: block;
-    margin-left: -19%;
+    margin-left: -10%;
     margin-right: auto;
     margin-top: 5%;
 }
-#navegador{
-    margin-left: -20%;
-    margin-right: 10%;
-}
-
 .nav_link{
     width: max-content;
     color: aliceblue;
     
 }
-
-.nav-item1{
-    margin-left: -40%;
+.nav-item11:hover,.nav-item22:hover{
+    border-bottom: 2px solid #53704B;
+  }
+.links{
+    color: #19ad05;
+  }
+  
+  .links:hover{
+    color: #53704B;
+    transform: scale(1.2);
+  }
+.nav-item11{
+    margin-left: 140%;
 }
-.nav-item2{
-    margin-left: 40%;
+    @media only screen and (max-width: 1300px) {
+        .nav-item11 {
+        margin-left: 120%;
+        }
+    }
+    @media only screen and (max-width: 1250px) {
+        .nav-item11 {
+        margin-left: 90%;
+        }
+    }
+    @media only screen and (max-width: 1170px) {
+        .nav-item11 {
+        margin-left: 60%;
+        }
+    }
+    @media only screen and (max-width: 1120px) {
+        .nav-item11 {
+        margin-left: 40%;
+        }
+    }
+.nav-item22{
+    margin-left: 30%;
 }
 .contenido{
     background-color: #dbddda;

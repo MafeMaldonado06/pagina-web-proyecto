@@ -5,11 +5,6 @@ html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, form, fie
     font-weight: normal;*/
 }
 
-body{
-  
-  background-color: #71EB7C;
-}
-
 *{
   text-decoration: none;
 }
@@ -82,20 +77,6 @@ body{
   }
 }
 
-.rol{
-    color: white;
-    margin-top: -10%;
-    margin-left: -15%;
-}
-#rol_img{
-    height: 50px;
-    width: 50px;
-    display: block;
-    margin-left: -19%;
-    margin-right: auto;
-    margin-top: 5%;
-    
-}
 #navegador{
     margin-left: -20%;
     margin-right: 10%;
