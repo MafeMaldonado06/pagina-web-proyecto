@@ -7,6 +7,19 @@ html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, form, fie
 *{
     text-decoration: none;
   }
+
+  .bandeja{
+    top: 0;
+    right: -300px;
+    width: 15%;
+    position: fixed;
+    height: 100vh;
+}
+
+.btn-close{
+    font-size: 25px;
+}
+
 #nav{
     padding-left: 2%;
 }
@@ -21,6 +34,7 @@ html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, form, fie
       width: 80px;
     }
   }
+
 #agroexpresss{
     height: 50px;
     width: auto;
@@ -57,32 +71,31 @@ html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, form, fie
       padding-left: 10%;
     }
   }
-.rol{
-    color: white;
-    margin-top: -4%;
-}
-    @media only screen and (max-width: 1000px) {
-        .rol {
-        font-size: 20px;
-        
-        }
-    }
+
 #rol_img{
     height: 50px;
     width: 50px;
     display: block;
-    margin-left: -10%;
-    margin-right: auto;
     margin-top: 5%;
 }
 .nav_link{
     width: max-content;
-    color: aliceblue;
+    color: white;
     
 }
-.nav-item11:hover,.nav-item22:hover{
+.nav-link:hover,.nav_link:focus{
     border-bottom: 2px solid #53704B;
+    background-size: 100% 2px;
+    color: green;
   }
+  .boton_agregar{
+    width: min-content;
+    height: auto;
+    margin: 1%;
+    margin-left: auto;
+    display: block;
+    float: right;
+}
 .links{
     color: #19ad05;
   }
@@ -91,31 +104,36 @@ html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, form, fie
     color: #53704B;
     transform: scale(1.2);
   }
-.nav-item11{
-    margin-left: 140%;
+#enlaces1ad{
+    margin-left: -30%;
+    margin-right: 2%;
+    color: aliceblue;
 }
-    @media only screen and (max-width: 1300px) {
-        .nav-item11 {
-        margin-left: 120%;
-        }
+  @media only screen and (max-width: 1300px){
+    #enlaces1ad{
+      margin-left: -55%;
+      margin-right: 2%;
+      
     }
-    @media only screen and (max-width: 1250px) {
-        .nav-item11 {
-        margin-left: 90%;
-        }
+
+    #enlaces2ad{
+    margin-left: -20%;
     }
-    @media only screen and (max-width: 1170px) {
-        .nav-item11 {
-        margin-left: 60%;
-        }
+  }
+
+  @media only screen and (max-width: 1250px){
+    #enlaces1ad{
+      margin-left: -80%;
+      margin-right: 2%;
     }
-    @media only screen and (max-width: 1120px) {
-        .nav-item11 {
-        margin-left: 40%;
-        }
+
+    #enlaces2ad{
+    margin-left: -30%;
     }
-.nav-item22{
-    margin-left: 30%;
+  }
+#enlaces2ad{
+    margin-right: 5%;
+    color: aliceblue;
 }
 .contenido{
     background-color: #dbddda;

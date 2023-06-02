@@ -5,8 +5,7 @@ html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, form, fie
     font-weight: normal;*/
 }
 
-<<<<<<< HEAD
-=======
+
 .bandeja{
   top: 0;
   right: -300px;
@@ -28,7 +27,6 @@ body{
   background-color: #71EB7C;
 }
 
->>>>>>> 9a25590012613017fc8ef68e9cf85c3d45e43a98
 *{
   text-decoration: none;
 }
