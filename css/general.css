@@ -171,12 +171,12 @@ body{
 }
 .card{
   margin: 1%;
-  width: 288px;
+  width: 255px;
   box-shadow: 0 0 30px grey;
 }
 .card:hover{
   margin: 1%;
-  width: 290px;
+  width: 260px;
   box-shadow: 0 0 30px #058100;
 }
   @media only screen and (max-width: 1000px) {
