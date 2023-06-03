@@ -8,6 +8,23 @@ html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, form, fie
 
 /* navegador */
 
+.bandeja{
+    top: 0;
+    right: -300px;
+    width: 50%;
+    position: fixed;
+    height: 10vh;
+}
+
+.btn-close{
+    font-size: 25px;
+}
+
+#nav{
+    padding-left: 2%;
+    background-color: #010700;
+}
+
 #logo_nav{
     height: 100px;
     width: 100dp;
@@ -25,32 +42,32 @@ html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, form, fie
     width: auto;
     margin-right: 500px;
 }
-    @media only screen and (max-width: 1260px) {
+    @media only screen and (max-width: 1310px) {
         #agroexpress {
             margin-right: 450px;
         }
     }
-    @media only screen and (max-width: 1220px) {
+    @media only screen and (max-width: 1250px) {
         #agroexpress {
             margin-right: 400px;
         }
     }
-    @media only screen and (max-width: 1190px) {
+    @media only screen and (max-width: 1200px) {
         #agroexpress {
             margin-right: 350px;
         }
     }
-    @media only screen and (max-width: 1110px) {
+    @media only screen and (max-width: 1160px) {
         #agroexpress {
             margin-right: 300px;
         }
     }
-    @media only screen and (max-width: 1080px) {
+    @media only screen and (max-width: 1100px) {
         #agroexpress {
             margin-right: 250px;
         }
     }
-    @media only screen and (max-width: 1020px) {
+    @media only screen and (max-width: 1040px) {
         #agroexpress {
             margin-right: 200px;
         }
@@ -67,7 +84,17 @@ html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, form, fie
     }
     @media only screen and (max-width: 680px) {
         #agroexpress {
+            height: 35px;
+        }
+    }
+    @media only screen and (max-width: 655px) {
+        #agroexpress {
             height: 30px;
+        }
+    }
+    @media only screen and (max-width: 625px) {
+        #agroexpress {
+            height: 25px;
         }
     }
     @media only screen and (max-width: 610px) {
@@ -117,69 +144,6 @@ html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, form, fie
             margin-left: 2%;
         }
     }
-/* cartas */
-
-.boton_editar{
-    width: min-content;
-    height: auto;
-    margin: 1%;
-    margin-left: auto;
-    display: block;
-    float: right;
-}
-.boton_editar:hover{
-    background-color: #61b656;
-}
-.links{
-    color: #19ad05;
-  }
-  
-  .links:hover{
-    color: #53704B;
-    transform: scale(1.2);
-  }
-
-
-.boton_img{
-    border-radius: 50%;
-    border: none;
-}
-
-#navegador{
-    margin-left: -20%;
-    margin-right: 10%;
-}
-
-.nav_link{
-    width: max-content;
-    color: aliceblue;
-    
-}
-
-.nav{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.nav li{
-    text-decoration: none;
-    margin-inline-start: 12%;
-    font-size: 20px;
-}
-
-.nav li a{
-    color: white;
-}
-
-.item_nav:hover{
-    color: gray;
-    border-bottom: 2px solid #146300;
-}
-
-.nav li a:hover{
-    color: gray;
-}
 
 /* bandeja */
 .bandeja{
@@ -189,39 +153,108 @@ html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, form, fie
     position: fixed;
     height: 100vh;
 }
+
 .bandeja2{
     top: 0;
     right: -300px;
     width: 15%;
     position: fixed;
     height: 100vh;
-  }
+}
+
 .btn-close{
     font-size: 25px;
 }
+
+/* cartas */
+
+.boton_editar{
+    width: max-content;
+    height: auto;
+    margin: 1%;
+    margin-left: auto;
+    display: block;
+    float: right;
+    font-size: 10px;
+    border: none;
+}
+.boton_editar:hover{
+    background-color: #61b656;
+}
+
 #cartas{
     padding: 2%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
+
 .card{
     margin: 1%;
     width: 18rem;
 }
+
 .card-img-top{
     width: 90%;
     height: 90%;
 }
-.boton_agregar{
-    width: min-content;
-    height: auto;
-    margin: 1%;
-    margin-left: auto;
-    display: block;
-    float: right;
+
+/* modal */
+
+.modal-header{
+    background-color: #146300;
+}
+.modal-title{
+    color: white;
+}
+.btn_edit{
+    background-color: #146300;
+    color: #dbddda;
+}
+.btn-vermas{
+    background-color: #1b8002;
+    color: #dbddda;
 }
 
+/* boton flotante */
+
+.contenedor{
+    width:90px;
+    height:90px;
+    position:absolute;
+    right:0px;
+    bottom:15%;
+  }
+  .botonF1{
+    width:60px;
+    height:60px;
+    border-radius:100%;
+    background:#146300;
+    right:0;
+    bottom:0;
+    position:absolute;
+    margin-bottom:16px;
+    border:none;
+    outline:none;
+    color:#FFF;
+    font-size:36px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    transition:.3s;  
+  }
+  span{
+    transition:.5s;  
+  }
+  .botonF1:hover span{
+    transform:rotate(360deg);
+  }
+  .botonF1:active{
+    transform:scale(1.1);
+  }
+/* footer */
+
+#foot_copy{
+    background-color: #000000;
+}
 /* despacho */
 
 .contenido{

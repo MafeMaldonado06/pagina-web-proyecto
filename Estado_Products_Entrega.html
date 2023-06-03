@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="css/inicioComprador.css">
+  <link rel="stylesheet" href="css/general.css">
+
+  <!--Jquery-->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!--Ajax-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <title>Inico Comprador</title>
+</head>
+
+<a href="#nav" class="btn-flotante" tabindex="0" role="button" data-bs-toggle="popover" data-bs-trigger="hover"
+  title="volver al navegador"><img src="./IMG/flecha.png" alt=""></a>
+
+<!-- NAV -->
+<nav id="nav" class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a href="inicioComprador.html"><img id="logo_nav" src="./img/logo.png" alt="logo"> </a>
+    <a class="navbar-brand" href="#"><img id="agroexpress" src="./img/TIPOGRAFIA2.png" alt="agroexpress"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      </a>
+      <div id="btn_img5">
+        <img id="usuarioIMG" src="img/camion-de-reparto.png" alt="imagen usuario" srcset="">
+      </div>
+    </div>
+  </div>
+</nav>
+
+<body style="background-image: url(imagenes/fondo.png);">
+
+  <div id="tabla">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col"></th>
+          <th class="TitulTablas" scope="col">PRODUCTO</th>
+          <th class="TitulTablas" scope="col">NOMBRE</th>
+          <th class="TitulTablas" scope="col">CIUDAD</th>
+          <th class="TitulTablas" scope="col">DIRECCION</th>
+          <th class="TitulTablas" scope="col">VALOR DE ENTREGA</th>
+          <th class="TitulTablas" scope="col"></th>
+
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row"></th>
+          <td scope="row"><img src="img/kumis.webp" class="card-img-top" alt="..."
+              style="height: 100px; width: 120px; "></td>
+          <td scope="row">Kumis</td>
+          <td scope="row">MADRID</td>
+          <td scope="row">Carrera 4 #20-00</td>
+          <td scope="row">$7.000</td>
+          <td scope="row"><button type="button" class="btn btn-outline-success  boton_agregar" data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop">DETALLES Y ESTADO</button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+              aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5 text-center" id="staticBackdropLabel">Entrega</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+
+                  <div class="modal-body">
+                    <p class="text-center text-success fw-bold">DATOS DE ENVIO</p>
+                    <p class="text-center">Pepito Perez</p>
+                    <p class="text-center">32213344</p>
+                    <div class="text-center">
+                      <p class="text-center">Carrera 4 #20-00</p>
+                      <p class="text-center">Madrid, Cundinamarca</p>
+                    </div>
+                    <hr>
+                    <div class="row">
+                      <div class="col-md-6 mb-3">
+                        <img src="img/kumis.webp" alt="Imagen" class="img-fluid">
+                      </div>
+                      <div class="col-md-6 mb-3">
+                        <p>Kumis</p>
+                        <p>Precio: $XX</p>
+                        <p>Cantidad: XX</p>
+                      </div>
+                    </div>
+                    <p class="text-center">Envío: Estándar $4,500</p>
+                    <div class="row">
+                      <div class="col-md-6 mb-3">
+                        <p>Opciones de pago:</p>
+                      </div>
+                      <div class="col-md-6 mb-3">
+                        <select class="form-select" aria-label="Opciones de pago">
+                          <option selected>Seleccione una opción</option>
+                          <option value="1">Tarjeta de crédito</option>
+                          <option value="2">Transferencia bancaria</option>
+                          <option value="3">PayPal</option>
+                        </select>
+                      </div>
+                    </div>
+                    <hr>
+                    <p class="text-success text-center">Detalle de pago</p>
+                    <div class="row">
+                      <div class="col-md-6 mb-3">
+                        <p>Subtotal de mercancía:</p>
+                        <p>Subtotal de envío:</p>
+                      </div>
+                      <div class="col-md-6 mb-3">
+                        <p>$XX</p>
+                        <p>$4,500</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="modal-footer">
+                    <p>Pago Total:</p>
+                    <p class="text-success">$XX</p>
+                    <button type="button" class="btn btn-primary">Entregado</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </td>
+        </tr>
+        <tr>
+
+      </tbody>
+    </table>
+  </div>
+  <!--Opciones perfil bandeja-->
+  <div class="bandeja bg-light" id="bandeja">
+    <div class="d-flex justify-content-end my-2">
+      <button class="btn-close" id="btn-cerrar"></button>
+    </div>
+
+    <div class="bg-info">
+      <div class="boton_img">
+        <img class="" src="img/camion-de-reparto.png" alt="">
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
+<script src="./js/general.js"></script>
+<script src="js/Jquery_Trasportador.js"></script>
+
+</html>

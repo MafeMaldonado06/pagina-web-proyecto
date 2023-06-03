@@ -24,9 +24,10 @@
       <div class="container-fluid">
         <a href="inicioComprador.html"><img id="logo_nav" src="./img/logo.png" alt="logo"> </a>
         <a class="navbar-brand" href="#"><img id="agroexpress" src="./img/TIPOGRAFIA2.png" alt="agroexpress"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" id="hamburguesa" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+        <div id="posicionNav">
         <div class="collapse navbar-collapse" id="navbarSupportedContent"> 
           <div class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" id="enlaces2" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -49,15 +50,15 @@
           
         </div>
       </div>
+      </div>
     </nav>
 
     <body style="background-image: url(imagenes/fondo.png);">
-    
+    <div class="table-responsive">
     <div id="tabla">
         <table class="table">
         <thead>
           <tr>
-            <th scope="col"></th>
             <th class="TitulTablas" scope="col">PRODUCTO</th>
             <th class="TitulTablas" scope="col">No.<br>PRODUCTO</th>
             <th class="TitulTablas" scope="col">CANTIDAD</th>
@@ -69,7 +70,6 @@
         </thead>
         <tbody>
           <tr>
-            <th scope="row"></th>
             <td scope="row"><img src="img/kumis.webp" class="card-img-top" alt="..." style="height: 100px; width: 120px; "></td>
             <td scope="row">Kumis</td>
             <td scope="row">2</td>
@@ -78,7 +78,6 @@
             <td scope="row">En Camino</td>
           </tr>
           <tr>
-            <th scope="row"></th>
             <td scope="row"><img src="img/berengena.jpg" class="card-img-top" alt="..." style="height: 100px; width: 120px; "></td>
             <td scope="row">Berengena</td>
             <td scope="row">2</td>
@@ -87,7 +86,6 @@
             <td scope="row">En Camino</td>
           </tr>
           <tr>
-            <th scope="row"></th>
             <td scope="row"><img src="img/CEBOLLA.JPG" class="card-img-top" alt="..." style="height: 100px; width: 120px; "></td>
             <td scope="row">Ceborra</td>
             <td scope="row">2</td>
@@ -96,7 +94,6 @@
             <td scope="row">En Camino</td>
           </tr>
           <tr>
-              <th scope="row"></th>
               <td scope="row"><img src="img/DURAZNO.JPG" class="card-img-top" alt="..."  style="height: 100px; width: 120px; "></td>
               <td scope="row">Durazno</td>
               <td scope="row">2</td>
@@ -105,7 +102,6 @@
             <td scope="row">En Camino</td>
             </tr>
             <tr>
-              <th scope="row"></th>
               <td scope="row"><img src="img/KIWI.JPG" class="card-img-top" alt="..." style="height: 100px; width: 120px; "></td>
               <td scope="row">Kiwi</td>
               <td scope="row">2</td>
@@ -118,6 +114,7 @@
         </tbody>
       </table>
     </div>
+  </div>
                 <!--Opciones perfil bandeja-->
                 <div class="bandeja bg-light" id="bandeja">
                   <div class="d-flex justify-content-end my-2">
