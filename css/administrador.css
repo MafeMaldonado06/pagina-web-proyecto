@@ -4,6 +4,22 @@ html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, form, fie
     /*font-size: 100%;
     font-weight: normal;*/
 }
+*{
+    text-decoration: none;
+  }
+
+  .bandeja{
+    top: 0;
+    right: -300px;
+    width: 15%;
+    position: fixed;
+    height: 100vh;
+}
+
+.btn-close{
+    font-size: 25px;
+}
+
 #nav{
     padding-left: 2%;
 }
@@ -12,41 +28,112 @@ html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, form, fie
     width: 100dp;
     margin-left: 50xp;
 }
-#agroexpress{
+@media only screen and (max-width: 500px) {
+    #logo_nav {
+      height: 80px;
+      width: 80px;
+    }
+  }
+
+#agroexpresss{
     height: 50px;
     width: auto;
-    position: absolute;
-    padding-left: 6%;
-}
-.rol{
-    color: white;
-    margin-top: -10%;
-    margin-left: -15%;
-}
+    margin-right: 90px;
+    
+  }
+  @media only screen and (max-width: 1240px) {
+    #agroexpresss {
+      margin-right: 80px;
+    }
+  }
+  @media only screen and (max-width: 1188px) {
+    #agroexpresss {
+        margin-right: 50px;
+    }
+  }
+  @media only screen and (max-width: 1135px) {
+    #agroexpresss {
+      margin-right: 40px;
+    }
+  }
+  @media only screen and (max-width: 1080px) {
+    #agroexpresss {
+      margin-right: 30px;
+    }
+  }
+  @media only screen and (max-width: 1040px) {
+    #agroexpresss {
+      margin-right: 20px;
+    }
+  }
+  @media only screen and (max-width: 1000px) {
+    #agroexpresss {
+      padding-left: 10%;
+    }
+  }
+
 #rol_img{
     height: 50px;
     width: 50px;
     display: block;
-    margin-left: -19%;
-    margin-right: auto;
     margin-top: 5%;
 }
-#navegador{
-    margin-left: -20%;
-    margin-right: 10%;
-}
-
 .nav_link{
     width: max-content;
-    color: aliceblue;
+    color: white;
     
 }
-
-.nav-item1{
-    margin-left: -40%;
+.nav-link:hover,.nav_link:focus{
+    border-bottom: 2px solid #53704B;
+    background-size: 100% 2px;
+    color: green;
+  }
+  .boton_agregar{
+    width: min-content;
+    height: auto;
+    margin: 1%;
+    margin-left: auto;
+    display: block;
+    float: right;
 }
-.nav-item2{
-    margin-left: 40%;
+.links{
+    color: #19ad05;
+  }
+  
+  .links:hover{
+    color: #53704B;
+    transform: scale(1.2);
+  }
+#enlaces1ad{
+    margin-left: -30%;
+    margin-right: 2%;
+    color: aliceblue;
+}
+  @media only screen and (max-width: 1300px){
+    #enlaces1ad{
+      margin-left: -55%;
+      margin-right: 2%;
+      
+    }
+
+    #enlaces2ad{
+    margin-left: -20%;
+    }
+  }
+
+  @media only screen and (max-width: 1250px){
+    #enlaces1ad{
+      margin-left: -80%;
+      margin-right: 2%;
+    }
+
+    #enlaces2ad{
+    margin-left: -30%;
+    }
+  }
+#enlaces2ad{
+    margin-right: 5%;
+    color: aliceblue;
 }
 .contenido{
     background-color: #dbddda;
