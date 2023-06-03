@@ -22,11 +22,6 @@ html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, form, fie
   height: 100vh;
 }
 
-body{
-  
-  background-color: #71EB7C;
-}
-
 *{
   text-decoration: none;
 }
@@ -213,12 +208,10 @@ body{
 }
 
 .boton_agregar{
-  
   margin: 1%;
   margin-right: 20px;
   display: block;
   float: right;
-  
 }
 .boton_agregar_desplegable{
   color: white;
@@ -320,7 +313,6 @@ body{
     }                                                        
 }
 #foot1{
-  background-color: #363131;
   position: relative;
   padding: 20px;
 }
