@@ -1,39 +1,144 @@
 html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, form, fieldset, blockquote {
     padding: 0;
     margin: 0;
-    /*font-size: 100%;
-    font-weight: normal;*/
+}
+*{
+    text-decoration: none;
 }
 
-.bandeja{
-    top: 0;
-    right: -300px;
-    width: 15%;
-    position: fixed;
-    height: 100vh;
-}
-
-.btn-close{
-    font-size: 25px;
-}
-
-#nav{
-    padding-left: 2%;
-    background-color: #010700;
-}
+/* navegador */
 
 #logo_nav{
     height: 100px;
     width: 100dp;
     margin-left: 50xp;
 }
+    @media only screen and (max-width: 500px) {
+        #logo_nav {
+        height: 80px;
+        width: 80px;
+        }
+    }
 
 #agroexpress{
     height: 50px;
     width: auto;
-    position: absolute;
-    padding-left: 6%;
+    margin-right: 500px;
 }
+    @media only screen and (max-width: 1260px) {
+        #agroexpress {
+            margin-right: 450px;
+        }
+    }
+    @media only screen and (max-width: 1220px) {
+        #agroexpress {
+            margin-right: 400px;
+        }
+    }
+    @media only screen and (max-width: 1190px) {
+        #agroexpress {
+            margin-right: 350px;
+        }
+    }
+    @media only screen and (max-width: 1110px) {
+        #agroexpress {
+            margin-right: 300px;
+        }
+    }
+    @media only screen and (max-width: 1080px) {
+        #agroexpress {
+            margin-right: 250px;
+        }
+    }
+    @media only screen and (max-width: 1020px) {
+        #agroexpress {
+            margin-right: 200px;
+        }
+    }
+    @media only screen and (max-width: 1000px) {
+        #agroexpress {
+            padding-left: 15%;
+        }
+    }
+    @media only screen and (max-width: 750px) {
+        #agroexpress {
+            height: 40px;
+        }
+    }
+    @media only screen and (max-width: 680px) {
+        #agroexpress {
+            height: 30px;
+        }
+    }
+    @media only screen and (max-width: 610px) {
+        #agroexpress {
+            display: none;
+        }
+    }
+
+#btn_img{
+    height: 50px;
+    width: 50px;
+    display: block;
+    margin-top: -5%;
+    margin-left: 7%;
+}
+
+.nav-link:hover,.nav_link:focus{
+    border-bottom: 2px solid #53704B;
+    background-size: 90% 2px;
+}
+
+#enlaces1cam{
+    width: max-content;
+    color: aliceblue;
+    margin-left: 2%;
+}
+#enlaces1cam:hover{
+    color: #19ad05;    
+}
+#enlaces2cam{
+    width: max-content;
+    color: aliceblue;
+    margin-left: 7%;
+}
+#enlaces2cam:hover{
+    color: #19ad05;    
+}
+
+    @media only screen and (max-width: 990px) {
+        #enlaces2cam {
+            margin-left: 2%;
+        }
+        #btn_img{
+            width: 30px;
+            height: 30px;
+            margin-top: 1%;
+            margin-left: 2%;
+        }
+    }
+/* cartas */
+
+.boton_editar{
+    width: min-content;
+    height: auto;
+    margin: 1%;
+    margin-left: auto;
+    display: block;
+    float: right;
+}
+.boton_editar:hover{
+    background-color: #61b656;
+}
+.links{
+    color: #19ad05;
+  }
+  
+  .links:hover{
+    color: #53704B;
+    transform: scale(1.2);
+  }
+
 
 .boton_img{
     border-radius: 50%;
@@ -76,6 +181,24 @@ html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, form, fie
     color: gray;
 }
 
+/* bandeja */
+.bandeja{
+    top: 0;
+    right: -300px;
+    width: 15%;
+    position: fixed;
+    height: 100vh;
+}
+.bandeja2{
+    top: 0;
+    right: -300px;
+    width: 15%;
+    position: fixed;
+    height: 100vh;
+  }
+.btn-close{
+    font-size: 25px;
+}
 #cartas{
     padding: 2%;
     display: flex;

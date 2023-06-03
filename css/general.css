@@ -5,7 +5,6 @@ html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, form, fie
     font-weight: normal;*/
 }
 
-
 .bandeja{
   top: 0;
   right: -300px;
@@ -319,16 +318,17 @@ body{
     right: 20px;
     }                                                        
 }
+/* footer */
 #foot1{
-  background-color: #363131;
+  background-color: #000000;
   position: relative;
   padding: 20px;
 }
 
   @media only screen and (max-width: 400px){
-  .div-foot {
-      width: 25%;
-  }
+    .div-foot {
+        width: 25%;
+    }
   }
 
 .footer-title{
@@ -339,9 +339,9 @@ body{
 }
 
   @media only screen and (max-width: 300px){
-  .footer-title {
-      font-size: 14px;
-  }
+    .footer-title {
+        font-size: 14px;
+    }
   }
 
 a.foot{
@@ -354,17 +354,12 @@ a.foot:hover{
 }
 
   @media only screen and (max-width: 400px){
-  a.foot {
-      font-size: 15px;
+    a.foot {
+        font-size: 15px;
+    }
   }
-  }
-
-img.redes{
-  margin: 5px;
-}
 
 img.redes:hover{
-  margin: 5px;
   width: 60px;
 }
 
