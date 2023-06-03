@@ -153,12 +153,12 @@ html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, form, fie
 }
 .card{
   margin: 1%;
-  width: 288px;
+  width: 255px;
   box-shadow: 0 0 30px grey;
 }
 .card:hover{
   margin: 1%;
-  width: 290px;
+  width: 260px;
   box-shadow: 0 0 30px #058100;
 }
   @media only screen and (max-width: 1000px) {
