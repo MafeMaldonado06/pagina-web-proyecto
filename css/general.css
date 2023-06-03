@@ -5,7 +5,25 @@ html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, form, fie
     font-weight: normal;*/
 }
 
+@media (min-width: 300px) and (max-width: 700px) {
+  #bandeja{
+    top: 0;
+    right: 300px;
+    width: 300px;
+    position: fixed;
+    height: 100vh;
+  }
+}
 
+@media (min-width: 300px) and (max-width: 700px) {
+  #bandeja2{
+    top: 0;
+    right: 300px;
+    width: 300px;
+    position: fixed;
+    height: 100vh;
+  }
+}
 .bandeja{
   top: 0;
   right: -300px;
@@ -49,55 +67,15 @@ body{
   margin-right: 500px;
   
 }
-@media only screen and (max-width: 1240px) {
+@media only screen and (min-width: 250px) and (max-width: 800px) {
   #agroexpress {
-    margin-right: 450px;
-  }
-}
-@media only screen and (max-width: 1188px) {
-  #agroexpress {
-    margin-right: 400px;
-  }
-}
-@media only screen and (max-width: 1135px) {
-  #agroexpress {
-    margin-right: 350px;
-  }
-}
-@media only screen and (max-width: 1080px) {
-  #agroexpress {
-    margin-right: 300px;
-  }
-}
-@media only screen and (max-width: 1040px) {
-  #agroexpress {
-    margin-right: 250px;
-  }
-}
-@media only screen and (max-width: 1000px) {
-  #agroexpress {
-    padding-left: 10%;
-  }
-}
-@media only screen and (max-width: 750px) {
-  #agroexpress {
-    height: 40px;
-    padding-left: 14%;
-  }
-}
-@media only screen and (max-width: 500px) {
-  #agroexpress {
-    height: 35px;
-    padding-left: 17%;
+    width: 150px;
+    height: 0px;
+    margin: 0px;
+
   }
 }
 
-@media only screen and (max-width: 450px) {
-  #agroexpress {
-    display: none;
-  
-  }
-}
 
 #navegador{
     margin-left: -20%;
