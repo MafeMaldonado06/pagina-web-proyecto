@@ -16,15 +16,17 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Ingresar</title>
 </head>
-<body>
+<body style="background-image: url(img/fondo_1.png);">
   
     <!-- menu -->
 
-    <nav id="nav" class="navbar navbar-expand-lg">
-        <a class="container-fluid" href="indexa.html">
-           <img id="logo_nav" src="./img/logo.png" alt="logo"> 
-           <img id="agroexpress" src="./img/TIPOGRAFIA2.png" alt="agroexpress">
-        </a>
+    <nav id="nav" class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <div class="navbar-left">
+          <a href="./indexa.html"><img id="logo_nav" src="./img/logo.png" alt="logo"></a>
+          <a class="navbar-brand" href="./indexa.html"><img id="agroexpress" src="./img/TIPOGRAFIA2.png" alt="agroexpress"></a>
+        </div>
+      </div>
     </nav>
 
     <!-- formulario -->
@@ -57,6 +59,42 @@
         </form>
       </div>  
 
+      <!-- FOOTER -->
+
+    <footer class="bg-dark text-center text-white" id="foot">
+      <!-- Grid container -->
+          <div class="container p-4 pb-0">
+              <section class="mb-4">
+                  <h4 class="text-center" style="font-weight: bold;">¿QUIENES SOMOS?</h4>
+                  <p class="contenido_foot">AGROEXPRESS se presenta como una entidad comprometida en satisfacer las necesidades de los colombianos, impulsando y respaldando activamente la comercialización de productos agrícolas provenientes de nuestro país. Fortaleciendo y apoyando la industria agropecuaria nacional, brindando a nuestros clientes una amplia gama de productos frescos y de calidad. </p>
+              </section>
+              <hr style="background-color: white;">
+          <!-- Section: Social media -->
+              <section class="mb-4">
+                  <!-- Facebook -->
+                  <a class="btn  btn-floating m-1 redes" href="https://www.facebook.com/" target="_blank" role="button"
+                  ><img src="./img/facebook.png"  alt="" srcset=""></a>
+  
+                  <!-- Whatsapp -->
+                  <a class="btn  btn-floating m-1 redes" href="https://web.whatsapp.com/" target="_blank"role="button"
+                  ><img src="./img/whatsapp.png" alt="" srcset=""></a>
+          
+                  <!-- Instagram -->
+                  <a class="btn  btn-floating m-1 redes" href="https://www.instagram.com/" target="_blank" role="button"
+                  ><img src="./img/instagram.png" alt="" srcset=""></a>
+              </section>
+              <!-- Section: Social media -->
+              
+              
+          </div>
+          <!-- Grid container -->
+      
+          <!-- Copyright -->
+          <div class="text-center p-3" id="foot_copy">
+          © 2023 Copyright: AgroExpress
+          </div>
+          <!-- Copyright -->
+    </footer>
       <script src="js/Ingresar.js"></script>
 
     </body>

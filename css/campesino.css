@@ -22,7 +22,7 @@ html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, form, fie
 
 #nav{
     padding-left: 2%;
-    background-color: #010700;
+    background-color: #000000;
 }
 
 #logo_nav{
@@ -104,11 +104,13 @@ html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, form, fie
     }
 
 #btn_img{
-    height: 50px;
-    width: 50px;
-    display: block;
     margin-top: -5%;
     margin-left: 7%;
+}
+
+#rol_img{
+    height: 50px;
+    width: 50px;
 }
 
 .nav-link:hover,.nav_link:focus{
@@ -192,6 +194,12 @@ html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, form, fie
 .card{
     margin: 1%;
     width: 18rem;
+    box-shadow: 0 0 30px grey;
+}
+
+.card:hover{
+    width: 18.5rem;
+    box-shadow: 0 0 30px #058100;
 }
 
 .card-img-top{
@@ -199,6 +207,7 @@ html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, form, fie
     height: 90%;
 }
 
+  
 /* modal */
 
 .modal-header{
@@ -222,41 +231,70 @@ html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, form, fie
     width:90px;
     height:90px;
     position:absolute;
-    right:0px;
+    right:5px;
     bottom:15%;
-  }
-  .botonF1{
-    width:60px;
-    height:60px;
+}
+
+.botonF1{
+    width:70px;
+    height:70px;
     border-radius:100%;
-    background:#146300;
+    background:#000000;
     right:0;
     bottom:0;
     position:absolute;
-    margin-bottom:16px;
     border:none;
+    margin-bottom:16px;
     outline:none;
     color:#FFF;
     font-size:36px;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 3px 6px #00000029, 0 3px 6px #0000003b;
     transition:.3s;  
-  }
-  span{
+}
+
+span{
     transition:.5s;  
-  }
-  .botonF1:hover span{
+}
+
+.botonF1:hover {
+    background: #072200;
+}
+
+.botonF1:hover span{
     transform:rotate(360deg);
-  }
-  .botonF1:active{
+}
+
+.botonF1:active{
     transform:scale(1.1);
-  }
+}
+
+.animacionVer{
+    transform:scale(1);
+}
 /* footer */
 
 #foot_copy{
     background-color: #000000;
 }
+
+.redes:hover{
+    border-bottom: 2px solid #146300;
+}
+.contenido_foot{
+    font-size: 13px; 
+    margin: 1%; 
+    color: #bdbdbd;
+}
+.contenido_foot:hover{
+    color: #ffffff;
+}
 /* despacho */
 
+.titulo{
+    background-color: #00000080;
+    color: white;
+    margin: 2%;
+}
 .contenido{
     background-color: #dbddda;
     color: #146300;
@@ -277,11 +315,11 @@ html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, form, fie
 }
 
     @media only screen and (max-width: 742px){
-    .contenido {
-        display: flex;
-        flex-direction: column;
+        .contenido {
+            display: flex;
+            flex-direction: column;
 
-    }
+        }
     }
 
 .contenido2{

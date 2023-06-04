@@ -1,77 +1,40 @@
 html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, form, fieldset, blockquote {
     padding: 0;
     margin: 0;
-    /*font-size: 100%;
-    font-weight: normal;*/
-}
-
-
-@media (min-width: 300px) and (max-width: 700px) {
-  #bandeja{
-    top: 0;
-    right: 300px;
-    width: 300px;
-    position: fixed;
-    height: 100vh;
-  }
-}
-
-@media (min-width: 300px) and (max-width: 700px) {
-  #bandeja2{
-    top: 0;
-    right: 300px;
-    width: 300px;
-    position: fixed;
-    height: 100vh;
-  }
-}
-
-.bandeja{
-  top: 0;
-  right: -300px;
-  width: 15%;
-  position: fixed;
-  height: 100vh;
-}
-
-.bandeja2{
-  top: 0;
-  right: -300px;
-  width: 15%;
-  position: fixed;
-  height: 100vh;
+    
 }
 
 *{
   text-decoration: none;
 }
 
+/* nav */
 
 #logo_nav{
     height: 100px;
     width: 100dp;
     margin-left: 50xp;
 }
-@media only screen and (max-width: 500px) {
-  #logo_nav {
-    height: 80px;
-    width: 80px;
+  @media only screen and (max-width: 500px) {
+    #logo_nav {
+      height: 80px;
+      width: 80px;
+    }
   }
-}
 #agroexpress{
   height: 50px;
   width: auto;
   margin-right: 500px;
   
 }
-@media only screen and (min-width: 250px) and (max-width: 800px) {
-  #agroexpress {
-    width: 150px;
-    height: 0px;
-    margin: 0px;
+  @media only screen and (min-width: 250px) and (max-width: 800px) {
+    #agroexpress {
+      width: 150px;
+      height: 0px;
+      margin: 0px;
 
+    }
   }
-}
 
 
 #navegador{
@@ -81,20 +44,13 @@ html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, form, fie
 
 .nav_link{
     width: max-content;
-    color: aliceblue;
-    
+    color: aliceblue;    
 }
+
 .navbar-brand{
   margin-left: 1%;
   font-weight: 500%;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-.nav-item1{
-    margin-left: -40%;
-}
-.nav-item2{
-    margin-left: 40%;
 }
 
   @media only screen and (max-width: 1000px) {
@@ -125,6 +81,9 @@ html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, form, fie
 .nav-item3:hover,.nav-item4:hover{
   border-bottom: 2px solid #53704B;
 }
+
+/* cartas */
+
 #cartas{
   padding: 2%;
   display: flex;
@@ -187,22 +146,7 @@ html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, form, fie
   transform: scale(1.2);
 }
 
-.boton_agregar{
-  margin: 1%;
-  margin-right: 20px;
-  display: block;
-  float: right;
-}
-.boton_agregar_desplegable{
-  color: white;
-  margin-top: 20px;
-  background-color: #19ad05;
-  margin-left: 35px;
-  border: solid #009688;
-  border-radius: 20px;
-  
-}
-  header{
+  /* header{
     height:170px;
     color:#FFF;
     font-size:20px;
@@ -217,135 +161,49 @@ html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, form, fie
     position:absolute;
     right:0px;
     bottom:0px;
-  }
-  .botonF1{
-    width:60px;
-    height:60px;
-    border-radius:100%;
-    background:#4cf436;
-    right:0;
-    bottom:0;
-    position:absolute;
-    margin-right:16px;
-    margin-bottom:16px;
-    border:none;
-    outline:none;
-    color:#FFF;
-    font-size:36px;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-    transition:.3s;  
-  }
-  span{
-    transition:.5s;  
-  }
-  .botonF1:hover span{
-    transform:rotate(360deg);
-  }
-  .botonF1:active{
-    transform:scale(1.1);
-  }
-  .bton{
-    width:40px;
-    height:40px;
-    border-radius:100%;
-    border:none;
-    color:#FFF;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-    font-size:28px;
-    outline:none;
-    position:absolute;
-    right:0;
-    bottom:0;
-    margin-right:26px;
-    transform:scale(0);
-  }
-  .botonF2{
-    background:#f38021;
-    margin-bottom:85px;
-    transition:0.5s;
-  }
-  .animacionVer{
-    transform:scale(1);
-  }
-  .btn-flotante {
-    color: #ffffff; 
-    border-radius: 5px; 
-    background-color: #037701a3; 
-    padding: 18px 30px; 
-    position: fixed;
-    bottom: 30px;
-    right:30px;
-    transition: all 300ms ease 0ms;
-    box-shadow: 0px 8px 15px #ffffff1a;
-    z-index: 99;
-    }
-    .btn-flotante:hover {
-    background-color: #ffffff; 
-    box-shadow: 0px 15px 20px #0000004d;
-    transform: translateY(-7px);
-    }
-    @media only screen and (max-width: 600px) {
+  } */
+/* boton flotante */
+
+.btn-flotante {
+  color: #ffffff; 
+  border-radius: 5px; 
+  background-color: #037701a3; 
+  padding: 18px 30px; 
+  position: fixed;
+  bottom: 30px;
+  right:30px;
+  transition: all 300ms ease 0ms;
+  box-shadow: 0px 8px 15px #ffffff1a;
+  z-index: 99;
+}
+.btn-flotante:hover {
+  background-color: #ffffff; 
+  box-shadow: 0px 15px 20px #0000004d;
+  transform: translateY(-7px);
+}
+  @media only screen and (max-width: 600px) {
     .btn-flotante {
-    font-size: 14px;
-    padding: 12px 20px;
-    bottom: 20px;
-    right: 20px;
+      font-size: 14px;
+      padding: 12px 20px;
+      bottom: 20px;
+      right: 20px;
     }                                                        
 }
+
 /* footer */
-#foot1{
 
+#foot_copy{
   background-color: #000000;
-  position: relative;
-  padding: 20px;
 }
 
-  @media only screen and (max-width: 400px){
-    .div-foot {
-        width: 25%;
-    }
-  }
-
-.footer-title{
-  color: #407f44;
-  font-weight: 1000px;
-  font-size: 20px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.redes:hover{
+  border-bottom: 2px solid #146300;
 }
-
-  @media only screen and (max-width: 300px){
-    .footer-title {
-        font-size: 14px;
-    }
-  }
-
-a.foot{
+.contenido_foot{
+  font-size: 13px; 
+  margin: 1%; 
+  color: #bdbdbd;
+}
+.contenido_foot:hover{
   color: #ffffff;
-  text-decoration: none;
-  font-size: 18px;
-}
-a.foot:hover{
-  color: #1bc805;
-}
-
-  @media only screen and (max-width: 400px){
-    a.foot {
-        font-size: 15px;
-    }
-  }
-
-img.redes:hover{
-  width: 60px;
-}
-
-#foot2{
-  background-color: #438006;
-  padding: 2px;
-  color: #ffffff;
-  font-weight: bold;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.p-foot{
-  font-weight: 600px;
 }

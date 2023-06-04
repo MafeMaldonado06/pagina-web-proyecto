@@ -7,7 +7,7 @@ html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, form, fie
 
 body{
     background-color: #e2e2e2;
-    background-image: url(/img/FondoOpcion2.svg);
+    background-image: url(/img/fondo_1.png);
 }
 
 #logo_nav{
@@ -73,63 +73,20 @@ label{
     background-color: #336104;
     font-size: 15px;
 }
-#foot1{
-    background-color: #363131;
-    position: relative;
-    padding: 20px;
-  }
-  
-    @media only screen and (max-width: 400px){
-    .div-foot {
-        width: 25%;
-    }
-    }
-  
-  .footer-title{
-    color: #407f44;
-    font-weight: 1000px;
-    font-size: 20px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  }
-  
-    @media only screen and (max-width: 300px){
-    .footer-title {
-        font-size: 14px;
-    }
-    }
-  
-  a.foot{
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 18px;
-  }
-  a.foot:hover{
-    color: #1bc805;
-  }
-  
-    @media only screen and (max-width: 400px){
-    a.foot {
-        font-size: 15px;
-    }
-    }
-  
-  img.redes{
-    margin: 5px;
-  }
-  
-  img.redes:hover{
-    margin: 5px;
-    width: 60px;
-  }
-  
-  #foot2{
-    background-color: #438006;
-    padding: 2px;
-    color: #ffffff;
-    font-weight: bold;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  }
-  
-  .p-foot{
-    font-weight: 600px;
-  }
+/* footer */
+
+#foot_copy{
+  background-color: #000000;
+}
+
+.redes:hover{
+  border-bottom: 2px solid #146300;
+}
+.contenido_foot{
+  font-size: 13px; 
+  margin: 1%; 
+  color: #bdbdbd;
+}
+.contenido_foot:hover{
+  color: #ffffff;
+}

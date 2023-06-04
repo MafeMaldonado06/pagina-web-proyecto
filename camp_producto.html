@@ -95,7 +95,7 @@
                                         <div class="col-md-12 mb-3 formulario__grupo" id="grupo__producto">
                                             <label for="product" class="formulario__label" for="imagen">IMAGEN</label>
                                             <div class="formulario__grupo-input">
-                                                <input type="text" class="formulario__input form-control" name="imagen" id="imagen" placeholder="URL de la imagen" required>
+                                                <input type="file" class="formulario__input form-control" name="imagen" id="imagen"  required>
                                             </div>
                                         </div>
                                     </div>
@@ -155,46 +155,112 @@
     </div>
 
     <!-- boton flotante -->
-
     <div class="contenedor">
-        <button class="botonF1">
-            <img src="./img/opciones.png" alt="">
-        </button>
-        <button class="btn botonF2 bton">
+        <button type="button" class="btn btn-outline-success botonF1" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
             <span>+</span>
         </button>
+        <!-- Modal -->
+        <div class="modal fade2" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel2">AGREGAR PRODUCTO</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+
+                    <!-- formulario -->
+                        <form class="container" id="formulario2">    
+                            <div class="row">
+                                <div class="col-md-12 mb-3 formulario__grupo" id="grupo__producto2">
+                                    <label for="product" class="formulario__label" for="imagen">IMAGEN</label>
+                                    <div class="formulario__grupo-input">
+                                        <input type="file" class="formulario__input form-control" name="imagen" id="imagen2"  required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-3 formulario__grupo" id="grupo__categoria2">
+                                    <label for="categoria" class="formulario__label">CATEGORIA</label>
+                                    <div class="formulario__grupo-input">
+                                        <select class="formulario__input form-control" name="categoria" id="categoria2"  required>
+                                            <option>SELECCIONE *</option>
+                                            <option>FRUTAS</option>
+                                            <option>VERDURAS</option>
+                                            <option>LEGUMBRES</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3 formulario__grupo" id="grupo__producto2">
+                                    <label for="product" class="formulario__label">PRODUCTO</label>
+                                    <div class="formulario__grupo-input">
+                                        <select class="formulario__input form-control" name="product" id="product2"  required>
+                                            <option>SELECCIONE *</option>
+                                            <option>BANANO</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-3 formulario__grupo" id="grupo__apellido2">
+                                    <label for="price" class="formulario__label">PRECIO</label>
+                                    <div class="formulario__grupo-input">
+                                        <input type="text" class="formulario__input form-control" name="price" id="price2" placeholder="precio" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3 formulario__grupo" id="grupo__cantidad2">
+                                    <label for="cantidad" class="formulario__label">CANTIDAD</label>
+                                    <div class="formulario__grupo-input">
+                                        <input type="number" class="formulario__input form-control" name="cantidad" id="cantidad2" placeholder="cantidad">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CERRAR</button>
+                        <button type="button" class="btn btn_edit">AGREGAR</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- FOOTER -->
 
     <footer class="bg-dark text-center text-white" id="foot">
     <!-- Grid container -->
-    <div class="container p-4 pb-0">
-      <!-- Section: Social media -->
-      <section class="mb-4">
-        <!-- Facebook -->
-        <a class="btn  btn-floating m-1" href="#!" role="button"
-          ><img src="./img/facebook.png" alt="" srcset=""></a>
+        <div class="container p-4 pb-0">
+            <section class="mb-4">
+                <h4 class="text-center" style="font-weight: bold;">¿QUIENES SOMOS?</h4>
+                <p class="contenido_foot">AGROEXPRESS se presenta como una entidad comprometida en satisfacer las necesidades de los colombianos, impulsando y respaldando activamente la comercialización de productos agrícolas provenientes de nuestro país. Fortaleciendo y apoyando la industria agropecuaria nacional, brindando a nuestros clientes una amplia gama de productos frescos y de calidad. </p>
+            </section>
+            <hr style="background-color: white;">
+        <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn  btn-floating m-1 redes" href="https://www.facebook.com/" target="_blank" role="button"
+                ><img src="./img/facebook.png"  alt="" srcset=""></a>
 
-        <!-- Whatsapp -->
-        <a class="btn  btn-floating m-1" href="#!" role="button"
-          ><img src="./img/whatsapp.png" alt="" srcset=""></a>
-  
-        <!-- Instagram -->
-        <a class="btn  btn-floating m-1" href="#!" role="button"
-          ><img src="./img/instagram.png" alt="" srcset=""></a>
-  
-      </section>
-      <!-- Section: Social media -->
-    </div>
-    <!-- Grid container -->
-  
-    <!-- Copyright -->
-    <div class="text-center p-3" id="foot_copy">
-      © 2020 Copyright:
-      <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-    </div>
-    <!-- Copyright -->
+                <!-- Whatsapp -->
+                <a class="btn  btn-floating m-1 redes" href="https://web.whatsapp.com/" target="_blank"role="button"
+                ><img src="./img/whatsapp.png" alt="" srcset=""></a>
+        
+                <!-- Instagram -->
+                <a class="btn  btn-floating m-1 redes" href="https://www.instagram.com/" target="_blank" role="button"
+                ><img src="./img/instagram.png" alt="" srcset=""></a>
+            </section>
+            <!-- Section: Social media -->
+            
+            
+        </div>
+        <!-- Grid container -->
+    
+        <!-- Copyright -->
+        <div class="text-center p-3" id="foot_copy">
+        © 2023 Copyright: AgroExpress
+        </div>
+        <!-- Copyright -->
   </footer>
     
     <!--Scripts-->
