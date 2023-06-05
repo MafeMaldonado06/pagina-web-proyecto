@@ -298,14 +298,14 @@ span{
 .contenido{
     background-color: #dbddda;
     color: #146300;
-    margin: 1%;
+    margin: 2%;
     padding: 1%;
     display: flex;
     border-radius: 2%;
     border-color: #146300;
     flex-wrap: row;
     justify-content: space-between;
-}
+  }
 
 .contenido:hover{
     background-color: #418522fa;
