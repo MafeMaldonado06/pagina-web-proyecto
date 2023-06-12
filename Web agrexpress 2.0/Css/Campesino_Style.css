@@ -1,0 +1,40 @@
+.contenido-despachos{
+    height: 100ex;
+}
+
+.icono-delivery-despachos-cartas i{
+    font-size: 55px;
+}
+
+/*Solo productos*/
+
+.botones-filtrar div{
+    margin-inline: 0.5%;
+}
+
+.carta-producto{
+    width: 20%;
+    margin-inline: 2%;
+    margin-block: 2%;
+}
+
+.img-producto-carta{
+    width: 60%;
+    border-radius: 50%;
+}
+
+.boton-verMas-cartaProducto{
+    width: 50%;
+    margin: 5% 0 5% 0;
+    padding: 0.3rem 5% 0.3rem 5%;
+    border: none;
+    border-radius: 20px;
+    color: white;
+}
+
+.boton-nuevo-producto-campesino{
+    border-radius: 50%;
+    width: 3%;
+    right: 1.5%;
+    text-align: center;
+}

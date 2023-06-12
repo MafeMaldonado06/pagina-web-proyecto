@@ -1,0 +1,103 @@
+.titulo div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+}
+
+.contenido-productos{
+    height: 100vh;
+}
+
+.contenedor-icon-categoria{
+    background: #53704B;
+    border-radius: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    padding: 8%;
+}
+
+.contenedor-icon-categoria:hover{
+    opacity: 0.9;
+}
+
+.card-producto{
+    width: 15%;
+    margin-inline: 2%;
+    margin-bottom: 2%;
+}
+
+.boton-verMas-cartaProducto{
+    display: none;
+    width: 50%;
+}
+
+.card-producto:hover .boton-verMas-cartaProducto{
+    display: block;
+    margin: 5% 0 5% 0;
+    padding: 0.3rem 5% 0.3rem 5%;
+    border: none;
+    border-radius: 20px;
+    color: white;
+}
+
+.producto-img-modal{
+    width: 75%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.producto-img-modal img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/*solo de usuarios*/
+.titulo-roles-usuarios div{
+    width: 60%;
+    margin-block: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor-icon-rol{
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 50%;
+    background-color: #53704B;
+    overflow: hidden;
+    padding: 8%;
+}
+
+.contenedor-icon-rol:hover{
+    opacity: 0.9;
+}
+
+.card-usuario{
+    width: 17%;
+    margin-inline: 1%;
+    margin-block: 2%;
+}
+
+.imagen-carta-usuario{
+    width: 50%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.contenedor-help-icon-modal button{
+    border-radius: 50%;
+    width: 7%;
+    border: none;
+}
+
+.icono-help-modal{
+    font-size: 20px;
+    color: white;
+}
