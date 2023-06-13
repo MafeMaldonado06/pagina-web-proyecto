@@ -5,7 +5,7 @@
 }
 
 .caja-imagen{
-    background-image: url(/Img/pexels-saraí-carrasco-17060513.jpg);
+    background-image: url(../Img/pexels-saraí-carrasco-17060513.jpg);
     background-size: cover;
     background-position: center;
     border-radius: inherit;

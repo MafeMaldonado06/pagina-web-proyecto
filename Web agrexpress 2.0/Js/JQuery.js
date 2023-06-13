@@ -30,7 +30,7 @@ $(document).ready(function(){
     }).mouseleave(function() {
         hoverTimeout = setTimeout(function() {
             $('#caja-categorias').slideUp();
-        }, 500);
+        }, 300);
     });
     
     $('#caja-categorias').mouseenter(function() {

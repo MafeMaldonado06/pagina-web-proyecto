@@ -6,7 +6,8 @@
 }
 
 .contenido-productos{
-    height: 100vh;
+    min-height: 20vh;
+    max-height: 100vh;
 }
 
 .contenedor-icon-categoria{
@@ -22,7 +23,7 @@
 }
 
 .card-producto{
-    width: 15%;
+    width: 20%;
     margin-inline: 2%;
     margin-bottom: 2%;
 }

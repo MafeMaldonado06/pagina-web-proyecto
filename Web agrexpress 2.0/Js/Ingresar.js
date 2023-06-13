@@ -19,7 +19,7 @@ $(document).ready(function(){
         console.log(sesion)
 
         if(sesion == false){
-            window.location.href = "/Frames/Formulario_Ingreso.html"
+            window.location.href = "../Frames/Formulario_Ingreso.html"
         }
     }
 
@@ -37,13 +37,13 @@ $(document).ready(function(){
             success : function(respuesta){
 
                 if(respuesta.rol_Id == 1){
-                    window.location.href= "/Frames/Comprador_Inicio.html"
+                    window.location.href= "../Frames/Comprador_Inicio.html"
                 }else if(respuesta.rol_Id == 2){
-                    window.location.href= "/Frames/Campesino_Productos.html"
+                    window.location.href= "../Frames/Campesino_Productos.html"
                 }else if(respuesta.rol_Id == 3){
                     window.location.href= "camp_producto.html"
                 }else if(respuesta.rol_Id == 4){
-                    window.location.href = "/Frames/Administrador_Productos.html"
+                    window.location.href = "../Frames/Administrador_Productos.html"
                 }
             }
         });
