@@ -134,4 +134,30 @@
 }
 
 /*Carrito comprador*/
+.productos-carrito{
+    min-height: 50vh;
+    max-height: 100vh;
+    margin: 3% 0 3% 0;
+}
 
+.productos-carrito .lista-productos-carrito,.menu-pago-carrito{
+    margin-inline: 5%;
+}
+
+.contenedor-productos-carrito{
+    background-color: #f5f5f5;
+}
+
+.producto-carrito:hover{
+    opacity: 0.5;
+}
+
+.imagen-producto-carrito{
+    background-color: white;
+    width: 20%;
+}
+
+.nombre-producto-carrito{
+    font-size: 25px;
+    font-weight: 600;
+}
