@@ -73,7 +73,7 @@ $(document).ready(function(){
     })
 
     $("#cerrar-bandeja-menu").on("click", function(){
-        $("#bandeja-menu-navegacion").animate({right : -480}, 500)
+        $("#bandeja-menu-navegacion").animate({right : -477}, 500)
     })
     
 })
