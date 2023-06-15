@@ -30,7 +30,7 @@
     <!--Fontawesome-->
     <script src="https://kit.fontawesome.com/094647b7d5.js" crossorigin="anonymous"></script>
 
-    <title>Carrito de compras - Agroexpress</title>
+    <title>Verduras - Agroexpress</title>
 </head>
 <body>
     <header class="d-flex align-items-center">
@@ -144,90 +144,26 @@
         </div> 
     </div>
 
-    <div class="productos-carrito d-flex justify-content-between">
-        <div class="lista-productos-carrito w-100 d-flex justify-content-center">
-            <div class="contenedor-productos-carrito px-3 py-1 my-2" id="productos-carrito">
-                <div class="producto-carrito d-flex justify-content-between my-2 rounded-2 overflow-hidden bg-body">
-                    <div class="d-flex">
-                        <div class="imagen-producto-carrito d-flex align-items-center">
-                            <img src="../Img/Durazno.JPG" class="d-block w-100" alt="">
-                        </div>
-                        <hr class="vr mx-3"> 
-    
-                        <div class="my-3">
-                            <div>
-                                <div class="d-flex flex-column">
-                                    <span>Ref : 123456</span>
-                                    <span class="nombre-producto-carrito">Durazno</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="d-flex w-100">
-                        <div class=" w-50 py-3">
-                            <div>
-                                <div class="d-flex text-center rounded-4 overflow-hidden">
-                                    <div class="col">
-                                        <button class="menos-producto w-100" id="restar-producto">
-                                            <i class="bi bi-dash"></i>
-                                        </button>
-                                    </div>
-                                    <div class="cantidad-producto col bg-body-tertiary d-flex justify-content-center align-items-center">
-                                        <input type="tel" class="w-100 py-1 border-0" minlength="0" maxlength="5" value="1" id="cantidad-producto">
-                                    </div>
-                                    <div class="col">
-                                        <button class="mas-producto w-100" id="sumar-producto">
-                                            <i class="bi bi-plus"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="d-flex justify-content-center align-items-center mt-2">
-                                    <span class="eliminar-producto-carrito">Eliminar</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="d-flex justify-content-center align-items-center w-50">
-                            <span class="precio-unidad-producto mx-1 text-center">
-                                3.500
-                            </span>
-                            <span class="unidad-medida-producto d-flex align-items-end">
-                                Und
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="menu-pago-carrito col-3 shadow d-flex justify-content-center py-3">
-            <div class="w-75">
-                <div>
-                    <h3>Resumen de compra</h3>
-                    <hr class="w-50 border-2">
+    <div class="contenedor-productos-frutas d-flex justify-content-center flex-wrap">
+        <div class="contenedor-cartas-productos-frutas w-50 d-flex justify-content-center my-5 py-3">
+            <div class="carta-producto-categoria card shadow">
+                <div class="card-img overflow-hidden">
+                    <img src="../Img/Durazno.JPG" class="d-block w-100" alt="">
                 </div>
 
-                <div>
-                    <ul class="resumen-compra list-unstyled">
+                <div class="card-body">
+                    <ul class="list-unstyled">
                         <li>
-                            <span class="tutilo-dato-usuario-bandeja">Sub-total: </span>
-                            <span class="valor-resumen">3.500</span>
+                            <h5>Durazno</h5>
                         </li>
                         <li>
-                            <span class="tutilo-dato-usuario-bandeja">Valor envio: </span>
-                            <span class="valor-resumen">2.000</span>
+                            <span>$3.500</span>
                         </li>
                     </ul>
-                </div>
-                <div class="w-100 d-flex justify-content-center align-items-center">
-                    <a href="" class="text-decoration-none btn btn-success w-50">
-                        Continuar
-                    </a>
-                </div>
 
-                <div class="d-flex justify-content-center align-items-center my-4">
-                    <img src="../Img/Opciones de pago.svg" alt="">
+                    <div class="contenedor-boton-agregar-carrito-comprador">
+                        <button class="boton-agregar-carrito-comprador" data-bs-toggle="modal" data-bs-target="#agregarCarrito">Poner en el carrito</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -284,5 +220,6 @@
     <script src="../Js/Ingresar.js"></script>
     <script src="../Js/Comprador.js"></script>
     <script src="../Js/JQuery.js"></script>
+
 </body>
 </html>

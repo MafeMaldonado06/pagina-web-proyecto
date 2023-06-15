@@ -36,7 +36,7 @@
             <img class="header-tipografia" src="/Img/Tipografia.png" alt="">
         </div>
 
-        <div class="header-enlaces col d-flex justify-content-end pe-5">
+        <div class="header-enlaces col-lg-6 col-md-2 d-flex justify-content-end pe-5">
             <div class="d-flex justify-content-center align-items-center w-100 text-center list-unstyled">
                 <li>
                     <a href="#nuestroproposito">
@@ -58,25 +58,55 @@
                         Registrarse
                     </a>
                 </li>
+                <div>
+                    <button class="btn bg-black" id="boton-hamburguesa">
+                        <i class="bi bi-list text-light lista-header"></i>
+                    </button>
+                </div>
             </div>
         </div>
     </header>
 
-    <div class="caja-fondo d-flex" transition-style="in:box:center">
+    <div class="bandeja-menu-navegacion" id="bandeja-menu-navegacion">
+        <div class="cerrar-bandeja-menu-navegacion d-flex justify-content-end">
+            <i class="bi bi-x text-light" id="cerrar-bandeja-menu"></i>
+        </div>
+        <ul class="enlaces-menu-bandeja text-light list-unstyled mx-4">
+            <li>
+                <a href="#nuestroproposito">
+                    Nuestro proposito
+                </a>
+            </li>
+            <li>
+                <a href="#aboutus">
+                    ¿Quienes somos?
+                </a>
+            </li>
+            <li>
+                <a href="Formulario_Ingreso.html">
+                    Iniciar sesion
+                </a>
+            </li>
+            <li>
+                <a href="Formulario_Registro.html">
+                    Registrarse
+                </a>
+            </li>
+        </ul>
+    </div>
 
+    <div class="caja-fondo d-flex mb-lg-4" transition-style="in:box:center">
         <div class="superposicion d-flex flex-column justify-content-center align-items-center">
             <h1 class="superposicion-h1 opacity-100">¡Bienvenid@!</h1>
             <p class="superposicion-p">Esperamos tengas una excelente experiencia y pronto tenerte en nuestra familia</p>
             <a class="superposicion-a" href="/Frames/Formulario_Ingreso.html">Iniciar sesion</a>
         </div>
-        
     </div>
 
-    <div class="mt-5 position-relative" id="aboutus">
+    <div class="mt-5 mt-md-2 position-relative" id="aboutus">
         <div class="contenido">
-            <div class="d-flex">
-                <div class="col-5 d-flex flex-column justify-content-center pt-4">
-
+            <div class="d-flex flex-md-column flex-xl-row">
+                <div class="col-xl-5 col-md-12 d-flex flex-column justify-content-center pt-4">
                     <div class="subtitulo">
                         <h2>
                             ¿Quienes somos?
@@ -94,7 +124,7 @@
                     </p>
                 </div>
 
-                <div class="col-7 d-flex align-content-center justify-content-center">
+                <div class="col-xl-7 col-md-12 my-md-3 d-flex align-items-center justify-content-center">
                     <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                           <div class="carousel-item active">
@@ -123,9 +153,8 @@
                 </div>
             </div>
 
-            <div class="d-flex justify-content-around my-3">
-
-                <div class="d-flex flex-column align-items-center w-25">
+            <div class="d-flex flex-md-column flex-lg-row align-items-md-center justify-content-around flex-wrap my-3">
+                <div class="contenedor-proposito d-flex flex-column align-items-center">
                     <div class="d-flex justify-content-center w-50">
                         <div class="proposito-icon text-center bg-success">
                             <i class="bi bi-graph-up-arrow"></i>
@@ -141,7 +170,7 @@
                     </div>
                 </div>
 
-                <div class="d-flex flex-column align-items-center w-25">
+                <div class="contenedor-proposito d-flex flex-column align-items-center">
                     <div class="d-flex justify-content-center w-50">
                         <div class="proposito-icon text-center bg-success">
                             <i class="bi bi-ear"></i>
@@ -160,7 +189,7 @@
                     
                 </div>
 
-                <div class="d-flex flex-column align-items-center w-25">
+                <div class="contenedor-proposito d-flex flex-column align-items-center">
                     <div class="d-flex justify-content-center w-50">
                         <div class="proposito-icon text-center bg-success">
                             <i class="bi bi-map"></i>
@@ -184,15 +213,17 @@
 
     <footer class="bg-black pb-3">
         <div class="d-flex">
-            <div class="w-50 d-flex justify-content-center py-4">
+            <div class="col-md-7 col-xl-6 d-flex justify-content-center py-4">
                 <div class="w-75 d-flex justify-content-center">
                     <div class="w-75">
                         <h2>Contactanos:</h2>
                         <form action="">
                             <label for="correo">Correo electronico </label>
                             <input type="text" class="form-control" placeholder="Ingresa tu correo electronico">
-                            <label for="texto">Mensaje</label>
-                            <input type="text" class="form-control" placeholder="Cuentanos en que podemos ayudarte">
+                            <div class="d-flex flex-column">
+                                <label for="texto">Mensaje</label>
+                                <textarea type="text" class="mensaje-form-footer form-control px-2 py-2 rounded-2 border-0" placeholder="Cuentanos en que podemos ayudarte"></textarea>
+                            </div>
 
                             <button class="btn btn-success w-25 my-3">Enviar</button>
                         </form>
@@ -201,7 +232,7 @@
 
             </div>
 
-            <div class="d-flex flex-column justify-content-center align-items-center col">
+            <div class="d-flex flex-column justify-content-center align-items-center col-md-5 col-xl">
                 <div class="w-25">
                     <img src="/Img/logo.png" class="d-block w-100" alt="">
                 </div>
@@ -229,6 +260,8 @@
             </h3>
         </div>
     </footer>
+
+    <script src="../Js/JQuery.js"></script>
 
 </body>
 </html>

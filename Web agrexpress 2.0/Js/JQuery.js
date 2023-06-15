@@ -43,4 +43,37 @@ $(document).ready(function(){
     //Popover inicializacion
     const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
     const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+
+    //Funciones para cantidad de productos en items carrito botones cantidad
+    let input = document.getElementById("cantidad-producto") 
+
+    $("#restar-producto").on("click", function(){
+        let cantidad = parseInt(input.value)
+
+        if(cantidad > 1){
+            cantidad -= 1
+            input.value = cantidad
+        }
+    })
+
+    $("#sumar-producto").on("click", function(){
+        let input = document.getElementById("cantidad-producto")
+
+        let cantidad = parseInt(input.value)
+
+        if(cantidad >= 1){
+            cantidad += 1
+            input.value = cantidad
+        }
+    })
+
+    //bandeja menu responsive
+    $("#boton-hamburguesa").on("click", function(){
+        $("#bandeja-menu-navegacion").animate({right : 0}, 500)
+    })
+
+    $("#cerrar-bandeja-menu").on("click", function(){
+        $("#bandeja-menu-navegacion").animate({right : -480}, 500)
+    })
+    
 })

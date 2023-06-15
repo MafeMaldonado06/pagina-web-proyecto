@@ -54,8 +54,38 @@ header{
     font-size: large;
 }
 
+.lista-header{
+    font-size: 40px;
+    display: none;
+}
+
 .header-enlaces li:hover{
     border-bottom: 2px solid #53704B;
+}
+
+.bandeja-menu-navegacion{
+    position: fixed;
+    width: 30%;
+    top: 0;
+    right: -350px;
+    z-index: 40;
+    background-color: #000;
+    height: 100vh;
+}
+
+.cerrar-bandeja-menu-navegacion{
+    font-size: 40px;
+}
+
+.enlaces-menu-bandeja li{
+    margin-block: 6%;
+}
+
+.enlaces-menu-bandeja li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
 }
 
 .contenedor-icono-carrito{
@@ -185,6 +215,10 @@ header{
     justify-items: center;
 }
 
+.contenedor-proposito{
+    width: 25%;
+}
+
 .proposito-icon{
     font-size: 53px;
     color: #000;
@@ -211,6 +245,16 @@ footer{
     bottom: 0;
     width: 100%;
     color: white;
+}
+
+.mensaje-form-footer{
+    text-align: left;
+    padding-top: 0;
+    height: 130px;
+    box-sizing: border-box;
+    vertical-align: text-top;
+    word-wrap: break-word;
+    overflow-x: auto;
 }
 
 .redes-footer div{
@@ -249,4 +293,66 @@ footer{
     font-size: 35px;
     border-radius: 50%;
     padding: 0 .5%;
+}
+
+@media (min-width: 1200px) and (max-width: 1399px){
+    .header-logo{
+        width: 18%;
+    }
+
+    .header-tipografia{
+        width: 35%;
+    }
+
+    .caja-fondo{
+        height: 750px;
+    }
+
+    .contenedor-proposito{
+        width: 35%;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+    .header-logo{
+        width: 18%;
+    }
+
+    .header-tipografia{
+        width: 40%;
+    }
+    
+    .caja-fondo{
+        height: 730px;
+    }
+
+    .contenedor-proposito{
+        width: 42%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    .header-logo{
+        width: 15%;
+    }
+
+    .header-tipografia{
+        width: 35%;
+    }
+
+    .lista-header{
+        display: block;
+    }
+
+    .header-enlaces li{
+        display: none;
+    }
+
+    .caja-fondo{
+        height: 530px;
+    }
+
+    .contenedor-proposito{
+        width: 50%;
+    }
 }
