@@ -39,8 +39,8 @@
             <img class="header-tipografia" src="../Img/Tipografia.png" alt="">
         </div>
 
-        <div class=" col d-flex justify-content-end pe-5 mx-3">
-            <div class="header-enlaces d-flex justify-content-end align-items-center w-100 list-unstyled">
+        <div class="header-enlaces col-lg-6 col-sm-5 d-flex justify-content-end pe-5 mx-3">
+            <div class="d-flex justify-content-end align-items-center w-100 list-unstyled">
                 <li>
                     <a href="../Frames/Comprador_Inicio.html">
                         Inicio
@@ -58,6 +58,16 @@
                     <div class="usuario-img bg-info">
                         <img src="../Img/pexels-bruno-salvadori-2330169.jpg" alt="">
                     </div>
+                </div>
+                <div class="contenedor-icono-carrito">
+                    <a href="../Frames/Comprador_Carrito.html">
+                        <i class="bi bi-cart"></i>
+                    </a>
+                </div>
+                <div class="lista-header">
+                    <button class="btn bg-black" id="boton-hamburguesa">
+                        <i class="bi bi-list text-light"></i>
+                    </button>
                 </div>
             </div>
         </div>
@@ -144,8 +154,41 @@
         </div> 
     </div>
 
+    <!--Buscador-->
+    <div class="d-flex justify-content-center mt-md-3 mt-sm-4">
+        <div class="caja-buscador d-flex align-items-center">
+            <div class="buscador overflow-hidden rounded-5 d-flex">
+                <input type="text" class="border-0 pe-3 col" placeholder="Buscar">
+                <div class="icon-search d-flex align-items-center justify-content-center col-2 text-center bg-body-secondary">
+                    <i class="bi bi-search"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="contenedor-productos-frutas d-flex justify-content-center flex-wrap">
         <div class="contenedor-cartas-productos-frutas w-50 d-flex justify-content-center my-5 py-3">
+            <div class="carta-producto-categoria card shadow">
+                <div class="card-img overflow-hidden">
+                    <img src="../Img/Durazno.JPG" class="d-block w-100" alt="">
+                </div>
+
+                <div class="card-body">
+                    <ul class="list-unstyled">
+                        <li>
+                            <h5>Durazno</h5>
+                        </li>
+                        <li>
+                            <span>$3.500</span>
+                        </li>
+                    </ul>
+
+                    <div class="contenedor-boton-agregar-carrito-comprador">
+                        <button class="boton-agregar-carrito-comprador" data-bs-toggle="modal" data-bs-target="#agregarCarrito">Poner en el carrito</button>
+                    </div>
+                </div>
+            </div>
+
             <div class="carta-producto-categoria card shadow">
                 <div class="card-img overflow-hidden">
                     <img src="../Img/Durazno.JPG" class="d-block w-100" alt="">

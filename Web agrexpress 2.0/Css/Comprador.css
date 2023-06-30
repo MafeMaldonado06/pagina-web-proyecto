@@ -1,4 +1,4 @@
-.caja-contenedora{
+  .caja-contenedora{
     position: absolute;
     position: fixed;
     width: 100%;
@@ -85,6 +85,18 @@
     display: block;
 }
 
+.carrusel-publicidad{
+    width: 60%;
+}
+
+.contenedor-tabla{
+    width: 60em;
+}
+
+.boton-tabla-pedidos{
+    background-color: #53704B;
+}
+
 .contenedor-icon-categoria{
     width: 9%;
     margin-inline: 3%;
@@ -111,7 +123,11 @@
 }
 
 .carta-producto-comprador{
-    width: 20%;
+    width: 15em;
+    margin-block: 0;
+    padding-block: 1em;
+    padding-inline: 1em;
+    margin-inline: .8em;
 }
 
 .boton-agregar-carrito-comprador{
@@ -130,7 +146,7 @@
 .contenedor-general-cartas-mas-vendido .carta-producto-comprador-mas-vendido{
     display: inline-block;
     margin-inline: 2%;
-    width: 15%;
+    width: 15em;
 }
 
 /*Carrito comprador*/
@@ -235,4 +251,33 @@
     height: initial;
     width: 25%;
     height: 90px;
+}
+
+
+/*Media queries*/
+@media (min-width: 1200px) and (max-width: 1399px){
+    
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+    .carrusel-publicidad{
+        width: 75%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    .carrusel-publicidad{
+        width: 80%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px){
+    .carrusel-publicidad{
+        width: 85%;
+    }
+
+    .carta-producto-comprador{
+        width: 20em;
+        margin-block: 1em;
+    }
 }

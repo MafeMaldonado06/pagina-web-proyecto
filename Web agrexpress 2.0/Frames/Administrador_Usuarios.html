@@ -35,12 +35,12 @@
     
     <header class="d-flex align-items-center">
         <div class="ms-5 align-content-center w-auto">
-            <img class="header-logo" src="/Img/logo.png" alt="">
-            <img class="header-tipografia" src="/Img/Tipografia.png" alt="">
+            <img class="header-logo" src="../Img/logo.png" alt="">
+            <img class="header-tipografia" src="../Img/Tipografia.png" alt="">
         </div>
 
-        <div class=" col d-flex justify-content-end pe-5 me-2">
-            <div class="header-enlaces d-flex justify-content-end align-items-center w-100 list-unstyled">
+        <div class="header-enlaces col-lg-6 col-sm-4 col d-flex justify-content-end pe-5 me-2">
+            <div class="d-flex justify-content-end align-items-center w-100 list-unstyled">
                 <li>
                     <a href="Administrador_Productos.html">
                         Productos
@@ -56,9 +56,28 @@
                         <img src="../Img/pexels-bruno-salvadori-2330169.jpg" alt="">
                     </div>
                 </div>
+                <div>
+                    <button class="btn bg-black" id="boton-hamburguesa">
+                        <i class="bi bi-list text-light lista-header"></i>
+                    </button>
+                </div>
             </div>
         </div>
     </header>
+
+    <div class="bandeja-menu-navegacion" id="bandeja-menu-navegacion">
+        <div class="cerrar-bandeja-menu-navegacion d-flex justify-content-end">
+            <i class="bi bi-x text-light" id="cerrar-bandeja-menu"></i>
+        </div>
+        <ul class="enlaces-menu-bandeja text-light list-unstyled mx-4">
+            <li>
+                <a href="../Frames/Administrador_Productos.html">
+                    <i class="bi bi-shop" style="font-size: 20px; color: #53704B;"></i>
+                    <span>Productos</span>
+                </a>
+            </li>
+        </ul>
+    </div>
 
     <span class="caja-opacidad-apertura-bandeja" id="caja-opacidad-apertura-bandeja">
     </span>
@@ -117,35 +136,35 @@
         </div> 
     </div>
 
-    <div class="contenido-usuarios d-flex flex-row-reverse justify-content-between align-items-center py-4">
-        <div class="d-flex justify-content-center col-1 me-4">
-            <div class="titulo-roles-usuarios w-100 d-flex flex-column align-items-center justify-content-center">
+    <div class="contenido-usuarios d-flex flex-lg-row-reverse flex-sm-column justify-content-between align-items-center py-4">
+        <div class="roles-usuario d-flex justify-content-center col-xl-1 me-lg-4">
+            <div class="titulo-roles-usuarios w-100 d-flex align-items-center justify-content-center">
                 <div>
-                    <div class="contenedor-icon-rol">
+                    <div class="contenedor-icon-rol p-3">
                         <img src="../Img/Limpiar.png" class="d-block w-100" alt="">
                     </div>
                     <h6>Ver todo</h6>
                 </div>
                 <div>
-                    <div class="contenedor-icon-rol">
+                    <div class="contenedor-icon-rol p-2">
                         <img src="../Img/Administrador.png" class="d-block w-100" alt="">
                     </div>
                     <h6>Administrador</h6>
                 </div>
                 <div>
-                    <div class="contenedor-icon-rol">
+                    <div class="contenedor-icon-rol p-2">
                         <img src="../Img/Campesino.png" class="d-block w-100" alt="">
                     </div>
                     <h6>Campesino</h6>
                 </div>
                 <div >
-                    <div class="contenedor-icon-rol">
+                    <div class="contenedor-icon-rol p-2">
                         <img src="../Img/Comprador.png" class="d-block w-100"  alt="">
                     </div>
                     <h6>Comprador</h6>
                 </div>
                 <div>
-                    <div class="contenedor-icon-rol">
+                    <div class="contenedor-icon-rol p-2">
                         <img src="../Img/Transportador.png" class="d-block w-100" alt="">
                     </div>
                     <h6>Transportador</h6>
@@ -153,7 +172,7 @@
             </div>
         </div>
 
-        <div class="cartas-usuarios position-relative d-flex justify-content-center flex-wrap col-10 ms-5 py-3" id="usuarios">
+        <div class="cartas-usuarios position-relative d-flex flex-sm-column flex-md-row justify-content-center flex-wrap col-lg-10 ms-lg-5 py-3 align-items-sm-center" id="usuarios">
             <div class="card-usuario card d-flex justify-content-center shadow">
                 <div class="d-flex justify-content-center w-100 py-3">
                     <div class="imagen-carta-usuario">
@@ -167,7 +186,47 @@
                         <h6>Parra Garzón</h6>
                     </div>
 
-                    <div class="d-flex justify-content-around my-3">
+                    <div class="botones-carta-usuario d-flex justify-content-around my-3">
+                        <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Actualizar</button>
+                        <button class="btn btn-dark">Eliminar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-usuario card d-flex justify-content-center shadow">
+                <div class="d-flex justify-content-center w-100 py-3">
+                    <div class="imagen-carta-usuario">
+                        <img src="../Img/pexels-bruno-salvadori-2330169.jpg" class="d-block w-100" alt="">
+                    </div>
+                </div>
+
+                <div class="card-body">
+                    <div class="d-flex flex-column align-items-center">
+                        <h4>Patricia Maria</h4>
+                        <h6>Parra Garzón</h6>
+                    </div>
+
+                    <div class="botones-carta-usuario d-flex justify-content-around my-3">
+                        <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Actualizar</button>
+                        <button class="btn btn-dark">Eliminar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-usuario card d-flex justify-content-center shadow">
+                <div class="d-flex justify-content-center w-100 py-3">
+                    <div class="imagen-carta-usuario">
+                        <img src="../Img/pexels-bruno-salvadori-2330169.jpg" class="d-block w-100" alt="">
+                    </div>
+                </div>
+
+                <div class="card-body">
+                    <div class="d-flex flex-column align-items-center">
+                        <h4>Patricia Maria</h4>
+                        <h6>Parra Garzón</h6>
+                    </div>
+
+                    <div class="botones-carta-usuario d-flex justify-content-around my-3">
                         <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Actualizar</button>
                         <button class="btn btn-dark">Eliminar</button>
                     </div>
@@ -242,16 +301,18 @@
     </div>
 
     <footer class="bg-black pb-3">
-        <div class="d-flex">
-            <div class="w-50 d-flex justify-content-center py-4">
+        <div class="d-flex flex-sm-column flex-xl-row">
+            <div class="col-md-12 col-xl-6 d-flex justify-content-center py-4">
                 <div class="w-75 d-flex justify-content-center">
                     <div class="w-75">
                         <h2>Contactanos:</h2>
                         <form action="">
                             <label for="correo">Correo electronico </label>
                             <input type="text" class="form-control" placeholder="Ingresa tu correo electronico">
-                            <label for="texto">Mensaje</label>
-                            <input type="text" class="form-control" placeholder="Cuentanos en que podemos ayudarte">
+                            <div class="d-flex flex-column">
+                                <label for="texto">Mensaje</label>
+                                <textarea type="text" class="mensaje-form-footer form-control px-2 py-2 rounded-2 border-0" placeholder="Cuentanos en que podemos ayudarte"></textarea>
+                            </div>
 
                             <button class="btn btn-success w-25 my-3">Enviar</button>
                         </form>
@@ -260,7 +321,7 @@
 
             </div>
 
-            <div class="d-flex flex-column justify-content-center align-items-center col">
+            <div class="d-flex flex-column justify-content-center align-items-center col-md-12 col-xl">
                 <div class="w-25">
                     <img src="/Img/logo.png" class="d-block w-100" alt="">
                 </div>

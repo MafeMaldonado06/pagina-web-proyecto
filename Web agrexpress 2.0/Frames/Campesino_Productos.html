@@ -40,13 +40,8 @@
             <img class="header-tipografia" src="../Img/Tipografia.png" alt="">
         </div>
 
-        <div class=" col d-flex justify-content-end pe-5 me-2">
-            <div class="header-enlaces d-flex justify-content-end align-items-center w-100 list-unstyled">
-                <li>
-                    <a href="Campesino_Productos.html">
-                        Productos
-                    </a>
-                </li>
+        <div class="header-enlaces col-lg-6 col-sm-4 d-flex justify-content-end pe-5 me-2">
+            <div class="d-flex justify-content-end align-items-center w-100 list-unstyled">
                 <li>
                     <a href="Campesino_Despachos.html">
                         Despachos
@@ -57,9 +52,28 @@
                         <img src="../Img/pexels-bruno-salvadori-2330169.jpg" alt="">
                     </div>
                 </div>
+                <div>
+                    <button class="btn bg-black" id="boton-hamburguesa">
+                        <i class="bi bi-list text-light lista-header"></i>
+                    </button>
+                </div>
             </div>
         </div>
     </header>
+
+    <div class="bandeja-menu-navegacion" id="bandeja-menu-navegacion">
+        <div class="cerrar-bandeja-menu-navegacion d-flex justify-content-end">
+            <i class="bi bi-x text-light" id="cerrar-bandeja-menu"></i>
+        </div>
+        <ul class="enlaces-menu-bandeja text-light list-unstyled mx-4">
+            <li>
+                <a href="Campesino_Despachos.html">
+                    <i class="bi bi-truck" style="font-size: 25px; color: #53704B;"></i>
+                    <span>Despachos</span>
+                </a>
+            </li>
+        </ul>
+    </div>
 
     <span class="caja-opacidad-apertura-bandeja" id="caja-opacidad-apertura-bandeja">
     </span>
@@ -122,7 +136,7 @@
     <div class="contenido-productos-campesino my-4">
         <div class="d-flex justify-content-center">
             <div class="d-flex w-75 justify-content-between align-items-center">
-                <div class="botones-filtrar d-flex w-25">
+                <div class="botones-filtrar d-flex col-md-6 col-sm-7">
                     <div>
                         <select name="filtrar" id="filtrar" class="form-select">
                             <option selected>Seleccione una categoria</option>
@@ -137,7 +151,7 @@
                     </div>
                 </div>
 
-                <div class="w-25">
+                <div class="col-sm-4 col-md-3">
                     <button class="btn btn-success w-50" data-bs-toggle="modal" data-bs-target="#agregar">Nuevo</button>
                 </div>
             </div>
@@ -182,8 +196,8 @@
           </div>
 
         <div class="d-flex justify-content-center my-5">
-            <div class="w-75 d-flex flex-wrap">
-                <div class="carta-producto card">
+            <div class="w-75 d-flex flex-md-row flex-sm-column align-items-sm-center align-items-lg-baseline justify-content-md-center justify-content-xl-start flex-wrap">
+                <div class="carta-producto card shadow">
                     <div class="d-flex justify-content-center my-3">
                         <div class="img-producto-carta overflow-hidden">
                             <img src="../Img/Durazno.JPG" class="d-block w-100" alt="">
@@ -191,9 +205,9 @@
                     </div>
 
                     <div class="card-body">
-                        <ul class="list-unstyled">
+                        <ul class="list-unstyled text-center">
                             <li>
-                                <h3>Durazno</h3>
+                                <h3 class="text-success">Durazno</h3>
                             </li>
                             <li>
                                 <span>$3.500</span>
@@ -203,7 +217,7 @@
                             </li>
                         </ul>
 
-                        <div>
+                        <div class="d-flex justify-content-center">
                             <button class="boton-verMas-cartaProducto bg-black" data-bs-toggle="modal" data-bs-target="#vermas">Ver más</button>
                         </div>
                     </div>
@@ -258,17 +272,19 @@
         <a href="#inicio" class="link-light"><i class="bi bi-arrow-up"></i></a>
     </div>
 
-    <footer class="container-fluid bg-black pb-3">
-        <div class="d-flex">
-            <div class="w-50 d-flex justify-content-center py-4">
+    <footer class="bg-black pb-3">
+        <div class="d-flex flex-sm-column flex-xl-row">
+            <div class="col-md-12 col-xl-6 d-flex justify-content-center py-4">
                 <div class="w-75 d-flex justify-content-center">
                     <div class="w-75">
                         <h2>Contactanos:</h2>
                         <form action="">
                             <label for="correo">Correo electronico </label>
                             <input type="text" class="form-control" placeholder="Ingresa tu correo electronico">
-                            <label for="texto">Mensaje</label>
-                            <input type="text" class="form-control" placeholder="Cuentanos en que podemos ayudarte">
+                            <div class="d-flex flex-column">
+                                <label for="texto">Mensaje</label>
+                                <textarea type="text" class="mensaje-form-footer form-control px-2 py-2 rounded-2 border-0" placeholder="Cuentanos en que podemos ayudarte"></textarea>
+                            </div>
 
                             <button class="btn btn-success w-25 my-3">Enviar</button>
                         </form>
@@ -277,9 +293,9 @@
 
             </div>
 
-            <div class="d-flex flex-column justify-content-center align-items-center col float">
+            <div class="d-flex flex-column justify-content-center align-items-center col-md-12 col-xl">
                 <div class="w-25">
-                    <img src="../Img/logo.png" class="d-block w-100" alt="">
+                    <img src="/Img/logo.png" class="d-block w-100" alt="">
                 </div>
             </div>
             

@@ -75,5 +75,29 @@ $(document).ready(function(){
     $("#cerrar-bandeja-menu").on("click", function(){
         $("#bandeja-menu-navegacion").animate({right : -477}, 500)
     })
+
+    //bandeja estadistica
+    $("#ver-estadisticas").on("click", function(){
+        $("#bandeja-estadisticas").animate({left : 0}, 500)
+    })
+
+    $("#close-estadisticas").on("click", function(){
+        $("#bandeja-estadisticas").animate({left : -550}, 500)
+    })
+
+    //categorias bandeja menu navegacion
+    let contentVisible = false;
+    $("#menu-slide-down").hide()
+
+    $("#boton-activador-slide-down").on("click", function(){
+        if(contentVisible){
+            $("#menu-slide-down").slideToggle()
+            contentVisible = false
+        }else{
+            $("#menu-slide-down").slideToggle()
+            contentVisible = true
+        }
+    })
+
     
 })

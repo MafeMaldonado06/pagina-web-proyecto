@@ -34,15 +34,19 @@
 .boton-verMas-cartaProducto{
     display: none;
     width: 50%;
-}
-
-.card-producto:hover .boton-verMas-cartaProducto{
-    display: block;
     margin: 5% 0 5% 0;
     padding: 0.3rem 5% 0.3rem 5%;
     border: none;
     border-radius: 20px;
     color: white;
+}
+
+.productos{
+    width: 75%;
+}
+
+.card-producto:hover .boton-verMas-cartaProducto{
+    display: block;
 }
 
 .producto-img-modal{
@@ -58,15 +62,19 @@
     height: 100%;
 }
 
-
-
 /*solo de usuarios*/
+.titulo-roles-usuarios{
+    display: flex;
+    flex-direction: column;
+}
+
 .titulo-roles-usuarios div{
     width: 60%;
     margin-block: 3%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
 .contenedor-icon-rol{
@@ -76,11 +84,12 @@
     border-radius: 50%;
     background-color: #53704B;
     overflow: hidden;
-    padding: 8%;
+    padding: 50%
 }
 
 .contenedor-icon-rol:hover{
     opacity: 0.9;
+    cursor: pointer;
 }
 
 .card-usuario{
@@ -106,6 +115,8 @@
     color: white;
 }
 
+/*Media queries*/
+
 @media (min-width: 1200px) and (max-width: 1399px){
     .titulo{
         width: 65%;
@@ -118,26 +129,182 @@
     .card-producto{
         width: 30%;
     }
+
+    /*Usuario*/
+    .card-usuario{
+        width: 23%;
+    }
+
+    .titulo-roles-usuarios div{
+        width: 70%;
+    }
+
+    .imagen-carta-usuario{
+        width: 60%;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1199px){
     .titulo{
-        width: 65%;
+        width: 75%;
     }
 
     .contenedor-icon-categoria{
-        width: 30%;
+        width: 25%;
     }
 
     .card-producto{
-        width: 30%;
+        width: 20%;
+    }
+
+    .productos{
+        width: 90%;
+    }
+
+    /*Usuario*/
+    .card-usuario{
+        width: 28%;
+    }
+
+    .titulo-roles-usuarios div{
+        width: 75%;
+    }
+
+    .imagen-carta-usuario{
+        width: 60%;
+    }
+
+    .botones-carta-usuario button{
+        margin-inline: 3%;
     }
 }
 
 @media (min-width: 768px) and (max-width: 991px){
+    .titulo{
+        width: 85%;
+    }
+
+    .contenedor-icon-categoria{
+        width: 25%;
+    }
     
+    .productos{
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        overflow: visible;
+    }
+
+    .card-producto{
+        width: 29%;
+    }
+
+    .boton-verMas-cartaProducto{
+        display: block;
+        width: 75%;
+    }
+
+    /*Usuario*/
+    .card-usuario{
+        width: 28%;
+    }
+
+    .roles-usuario{
+        width: 75%;
+    }
+
+    .titulo-roles-usuarios{
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+        padding: 0;
+    }
+
+    .titulo-roles-usuarios div{
+        margin-block: 0;
+        width: 65px;
+        padding: 5%;
+        flex-grow: 1;
+    }
+
+    .contenedor-icon-categoria{
+        width: 100%;
+    }
+
+    .imagen-carta-usuario{
+        width: 60%;
+    }
+
+    .botones-carta-usuario button{
+        margin-inline: 3%;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 767px){
-    
+    .titulo{
+        width: 90%;
+    }
+
+    .contenedor-icon-categoria{
+        width: 25%;
+    }
+
+    .productos{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        overflow: visible;
+    }
+
+    .card-producto{
+        width: 38%;
+    }
+
+    .boton-verMas-cartaProducto{
+        display: block;
+        width: 75%;
+    }
+
+    /*Usuario*/
+    .card-usuario{
+        width: 55%;
+    }
+
+    .roles-usuario{
+        width: 90%;
+    }
+
+    .titulo-roles-usuarios{
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+        padding: 0;
+    }
+
+    .titulo-roles-usuarios div{
+        margin-block: 0;
+        width: 65px;
+        padding: 5%;
+        flex-grow: 1;
+    }
+
+    .titulo-roles-usuarios div h6{
+        display: none;
+    }
+
+    .contenedor-icon-categoria{
+        width: 100%;
+    }
+
+    .imagen-carta-usuario{
+        width: 60%;
+    }
+
+    .botones-carta-usuario button{
+        margin-inline: 3%;
+    }
+
+    .cartas-usuario{
+        flex-direction: column;
+    }
 }
