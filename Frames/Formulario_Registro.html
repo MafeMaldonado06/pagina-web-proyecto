@@ -21,6 +21,7 @@
 
     <!--Ajax-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../js/Registro.js"></script>
 
     <!--Jquery-->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -43,37 +44,25 @@
         <div class="d-flex flex-column col-xxl-4 border py-4 px-5 rounded shadow">
             <form action="" class="d-flex flex-column" enctype="multipart/form-data">
                 <label for="documento">Documento</label>
-                <input type="text" class="form-control mb-3" name="documento" placeholder="Ingrese su numero de documento">
+                <input type="text" class="form-control mb-3" name="documento" placeholder="Ingrese su numero de documento" id="documento">
 
                 <label for="nombres">Nombres</label>
-                <input type="text" class="form-control mb-3" name="nombres" placeholder="Ingrese sus nombres">
+                <input type="text" class="form-control mb-3" name="nombres" placeholder="Ingrese sus nombres" id="nombre">
 
                 <label for="apellidos">Apellidos</label>
-                <input type="text" class="form-control mb-3" name="apellidos" placeholder="Ingrese sus apellidos">
+                <input type="text" class="form-control mb-3" name="apellidos" placeholder="Ingrese sus apellidos" id="apellido">
 
                 <label for="correo">Correo electronico</label>
-                <input type="text" class="form-control mb-3" name="correo" placeholder="Ingrese su correco electronico">
+                <input type="text" class="form-control mb-3" name="correo" placeholder="Ingrese su correco electronico" id="correo">
 
                 <label for="celular">Celular</label>
-                <input type="text" class="form-control mb-3" name="celular" placeholder="Ingrese su numero de telefono">
+                <input type="text" class="form-control mb-3" name="celular" placeholder="Ingrese su numero de telefono" id="celular">
 
                 <label for="telefono">Telefono</label>
-                <input type="text" class="form-control mb-3" name="telefono" placeholder="Ingrese su numero de telefono">
+                <input type="text" class="form-control mb-3" name="telefono" placeholder="Ingrese su numero de telefono" id="telefono">
 
                 <label for="img">Imagen</label>
-                <input type="file" name="img" class="form-control mb-3">
-
-                <div class="d-flex w-100 mb-3">
-                    <div class="col me-2">
-                        <label for="departamento">Departamento</label>
-                        <select class="form-control" name="departamento" id="departamento"></select>
-                    </div>
-
-                    <div class="col">
-                        <label for="ciudad">Ciudad</label>
-                        <select class="form-control" name="ciudad" id="ciudad"></select>
-                    </div>
-                </div>
+                <input type="file" name="img" class="form-control mb-3" id="img">
 
                 <label for="direccion">Direccion</label>
                 <input type="text" placeholder="Ingrese su direccion" id="direccion" class="form-control">
