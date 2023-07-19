@@ -68,13 +68,18 @@
                 <input type="text" placeholder="Ingrese su direccion" id="direccion" class="form-control">
 
                 <label for="contraseña">Contraseña</label>
-                <input type="text" placeholder="Ingrese su contraseña" id="contraseña" class="form-control">
+                <input type="password" placeholder="Ingrese su contraseña" id="contraseña" class="form-control">
 
                 <label for="rol">Rol</label>
-                <select class="form-control mb-3" name="rol" id="rol"></select>
+                <select class="form-control mb-3" name="rol" id="rol">
+                    <option value="">Seleccione una opcion</option>
+                    <option value="Campesino">Campesino</option>
+                    <option value="Transportador">Transportador</option>
+                    <option value="Comprador">Comprador</option>
+                </select>
 
                 <div class="d-flex justify-content-center">
-                    <button type="submmit" id="registrar" class="btn btn-success my-4 w-50">Registrarme</button>
+                    <button type="button" id="registrar" class="btn btn-success my-4 w-50">Registrarme</button>
                 </div>
             </form>
 

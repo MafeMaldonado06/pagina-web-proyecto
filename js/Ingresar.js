@@ -38,6 +38,7 @@ $(document).ready(function(){
             dataType : "JSON",
             success : function(respuesta){
                 console.log(respuesta)
+                setSession(datos.documento)
                 if(respuesta.rol_Id == 1){
                     window.location.href= "../Frames/Comprador_Inicio.html"
                 }else if(respuesta.rol_Id == 2){

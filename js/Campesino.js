@@ -1,5 +1,6 @@
 $(document).ready(function(){
     
+    window.sessionStorage.getItem("id_usuario", documento)
 
 /* FILTRAR PRODUCTOS */
     $('#enviar_filtro').on('click', function(){
@@ -100,7 +101,7 @@ $(document).ready(function(){
         let tarjetasContainer = document.getElementById("tarjetasContainer");
         // Realiza la llamada AJAX para obtener los datos
         var xhr = new XMLHttpRequest();
-        xhr.open("GET", "http://localhost:8080/ListarProductosCampesino" + documento, true);
+        xhr.open("GET", "http://localhost:8080/ListarProductosCampesino/" + documento, true);
         xhr.onreadystatechange = function() {
         if (xhr.readyState === 4 && xhr.status === 200) {
             var datos = JSON.parse(xhr.responseText);
