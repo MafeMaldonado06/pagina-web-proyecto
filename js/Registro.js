@@ -20,7 +20,7 @@ $(document).ready(function() {
     console.log(datosEnvio);
 
     $.ajax({
-      url: "http://localhost:8080/AgregarUsuario",
+      url: "http://bdagroexpress-production.up.railway.app/AgregarUsuario",
       type: "POST",
       data: datosEnvio,
       contentType: "application/JSON",

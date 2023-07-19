@@ -2,241 +2,284 @@ $(document).ready(function(){
 
     /* ULTIMOS PEDIDOS */
 
-    fetch("http://localhost:8080/OrdenCompra",true)
-    .then(response => response.json())
-    .then(data => mostrarPedidos(data))
-    .catch(error => console.error("Error al obtener los últimos pedidos:", error));
-
-    function mostrarPedidos(data) {
-        const tabla = document.getElementById("tablaPedidos");
-        tabla.innerHTML = ""; // Limpiar el contenido de la tabla
-      
-        data.forEach(pedido => {
-          const fila = document.createElement("tr");
-      
-          const noCompra = document.createElement("td");
-          noCompra.textContent = pedido.OrdC_Id;
-          fila.appendChild(noCompra);
-      
-          const tomaPedido = document.createElement("td");
-          tomaPedido.textContent = pedido.Fac_FechaVenta;
-          fila.appendChild(tomaPedido);
-      
-          const botonConsultar = document.createElement("td");
-          const boton = document.createElement("button");
-          boton.textContent = "Consultar";
-          boton.className = "boton-tabla-pedidos py-1 btn btn-success";
-          boton.addEventListener("click", function() {
-            // Lógica para consultar el pedido
-            // NOSE QUE PONER ACA
-            
-          });
-          botonConsultar.appendChild(boton);
-          fila.appendChild(botonConsultar);
-      
-          const estado = document.createElement("td");
-          estado.textContent = pedido.estado; // no esta aun el metodo del estado
-          fila.appendChild(estado);
-      
-          tabla.appendChild(fila);
-        });
+    $.ajax({
+      url: "http://bdagroexpress-production.up.railway.app/OrdenCompra",
+      type: 'GET',
+      dataType: "JSON",
+      success: function (respuesta) {
+          if (respuesta.length === 0) {
+              productos.innerHTML = '<div class="w-75 text-center"><h1>Lo sentimos</h1><span>No hay pedidos</span></div>';
+          } else {
+              let startIndex = respuesta.length - 2; // Start from the second-last index
+              let id = 1;
+  
+              // Create the table HTML
+              let table = '<div class="d-flex justify-content-center align-items-center py-2">' +
+                  '<div class="contenedor-tabla d-flex align-items-center justify-content-center rounded-3 overflow-hidden">' +
+                  '<table class="table table-hover table-striped text-center" id="tablaPedidos">' +
+                  '<tr>' +
+                  '<th>N° Compra</th>' +
+                  '<td>Toma de pedido</td>' +
+                  '<th>Puedes</th>' +
+                  '<th>Estado</th>' +
+                  '</tr>';
+  
+              for (let producto = startIndex; producto < respuesta.length; producto++, id++) {
+                  let noCompra = respuesta[producto].OrdC_Id;
+                  let tomaPedido = respuesta[producto].Fac_FechaVenta;
+                  let estado = respuesta[producto].estado;//el metodo del estado no esta
+  
+                  // Add rows to the table
+                  table += '<tr>' +
+                      '<td>' + noCompra + '</td>' +
+                      '<td>' + tomaPedido + '</td>' +
+                      '<td>' +
+                      '<div class="d-flex justify-content-center">' +
+                      '<button class="boton-tabla-pedidos py-1 btn btn-success">Consultar</button>' +//no se que poner al oprimir el boton
+                      '</div>' +
+                      '</td>' +
+                      '<td>' + estado + '</td>' +
+                      '</tr>';
+              }
+  
+              table += '</table>' +
+                  '<span class="caja-opacidad-tus-pedidos"></span>' +
+                  '</div>' +
+                  '</div>';
+  
+              // Set the table HTML to the 'productos' container
+              productos.innerHTML = table;
+          }
       }
+  });
     
     /* BUSCADOR */
 
-    const inputBuscar = document.querySelector(".buscador input");
-    inputBuscar.addEventListener("input", filtrarTarjetas());
-
-    function filtrarTarjetas() {
-      const inputValor = inputBuscar.value.trim().toLowerCase();
-      const tarjetas = document.querySelectorAll(".carta-producto-comprador");
-    
-      tarjetas.forEach(tarjeta => {
-        const nombreProducto = tarjeta.querySelector("h5").textContent.trim().toLowerCase();
-    
-        if (nombreProducto.includes(inputValor)) {
-          tarjeta.style.display = "block";
-        } else {
-          tarjeta.style.display = "none";
-        }
+    function cargarTarjetas() {
+      const tarjetas1 = document.getElementById('tarjetasContainer');
+      tarjetas1.innerHTML = ""; // Vaciar el contenedor de tarjetas
+  
+      $.ajax({
+          url: 'http://bdagroexpress-production.up.railway.app/Listarproductos',
+          type: 'GET',
+          dataType: "JSON",
+          success: function (respuesta) {
+              if (respuesta.length === 0) {
+                  tarjetas1.innerHTML = '<div class="w-75 text-center"><h1>Lo sentimos</h1><span>No hay productos de esta categoría</span></div>';
+              } else {
+                  for (let producto = 0; producto < respuesta.length; producto++) {
+                      let detReferencia = respuesta[producto].det_Referencia;
+                      tarjetas1.innerHTML += '<div class="carta-producto-comprador card">' +
+                          '<div class="card-img overflow-hidden">' +
+                          '<img src="../Img/Durazno.JPG" class="d-block w-100" alt="">' +
+                          '</div>' +
+                          '<div class="card-body">' +
+                          '<ul class="list-unstyled">' +
+                          '<li><h5>' + respuesta[producto].det_Nombre_product + '</h5></li>' +
+                          '<li><span>$' + respuesta[producto].det_precio + '</span></li>' +
+                          '</ul>' +
+                          '<div class="contenedor-boton-agregar-carrito-comprador">' +
+                          '<button class="boton-agregar-carrito-comprador" data-bs-toggle="modal" data-bs-target="#agregarCarrito">Poner en el carrito</button>' +
+                          '</div>' +
+                          '</div>' +
+                          '</div>';
+                  }
+              }
+          }
       });
-    }
+  }
+  
+  function filtrarTarjetas() {
+      let filtro = $("#inputBusqueda").val();
+      let tarjetas = $(".carta-producto-comprador");
+      tarjetas.each(function () {
+          let nombreProducto = $(this).find("h5").text();
+          if (!nombreProducto.toLowerCase().includes(filtro.toLowerCase())) {
+              $(this).hide();
+          } else {
+              $(this).show();
+          }
+      });
+  }
+  
+  // Cargar las tarjetas al inicio
+  $(document).ready(function () {
+      cargarTarjetas();
+  });
+  
 
     window.addEventListener("DOMContentLoaded", filtrarTarjetas);
 
     /* LISTAR PRODUCTOS */
 
-    function cargarDatosTarjetas() {
-      let tarjetasContainer = document.getElementById("tarjetasContainer");
-      // Realiza la llamada AJAX para obtener los datos    
-      $.ajax({
-        url: "http://localhost:8080/ListarProductos",
-        dataType: "json",
-        success: function(datos) {
-          mostrarDatosEnTarjetas(datos);
-        },
-        error: function(jqXHR, textStatus, errorThrown) {
-          console.error("Error al cargar los productos:", textStatus, errorThrown);
-        }
-      });
-    }
+    const tarjetas1 = document.getElementById('tarjetasContainer')
 
-    function mostrarDatosEnTarjetas(datos) {
-      datos.forEach(function(datos) {
-        let tarjeta = $("<div>").addClass("carta-producto", "card", "shadow");
-    
-        let imagenDiv = $("<div>").addClass("d-flex justify-content-center my-3");
-        let imagenProducto = $("<img>").attr("src", datos.det_Img).addClass("d-block w-100");
-        imagenDiv.append(imagenProducto);
-        tarjeta.append(imagenDiv);
-    
-        let cardBody = $("<div>").addClass("card-body");
-    
-        let ul = $("<ul>").addClass("list-unstyled text-center");
-    
-        let nombreLi = $("<li>");
-        let nombreProducto = $("<h3>").addClass("text-success").attr("id", "nomproducto").text(datos.det_Nombre_product);
-        nombreLi.append(nombreProducto);
-        ul.append(nombreLi);
-    
-        let precioLi = $("<li>");
-        let precioProducto = $("<span>").attr("id", "precioproducto").text(datos.det_precio);
-        precioLi.append(precioProducto);
-        ul.append(precioLi);
-    
-        let cantidadLi = $("<li>");
-        let cantidadProducto = $("<span>").attr("id", "cantproducto").text(datos.det_cantidad);
-        cantidadLi.append(cantidadProducto);
-        ul.append(cantidadLi);
-    
-        cardBody.append(ul);
-    
-        let verMasDiv = $("<div>").addClass("d-flex justify-content-center");
-        let verMasButton = $("<button>").addClass("boton-verMas-cartaProducto").attr("data-bs-toggle", "modal").attr("data-bs-target", "#vermas").html('<span>Ver más</span>');
-        verMasDiv.append(verMasButton);
-        cardBody.append(verMasDiv);
-    
-        tarjeta.append(cardBody);
-    
-        tarjetasContainer.append(tarjeta);
-      });
-    }
-       
-    cargarDatosTarjet
+    $.ajax({
+      url: 'http://bdagroexpress-production.up.railway.app/Listarproductos',
+      type: 'GET',
+      dataType: "JSON",
+      success: function (respuesta) {
+          if (respuesta.length === 0) {
+              tarjetas1.innerHTML = '<div class="w-75 text-center"><h1>Lo sentimos</h1><span>No hay productos de esta categoría</span></div>';
+          } else {
+              for (let producto = 0; producto < respuesta.length; producto++) {
+                  let detReferencia = respuesta[producto].det_Referencia;
+                  tarjetas1.innerHTML += '<div class="carta-producto-comprador card">' +
+                      '<div class="card-img overflow-hidden">' +
+                      '<img src="../Img/Durazno.JPG" class="d-block w-100" alt="">' +
+                      '</div>' +
+                      '<div class="card-body">' +
+                      '<ul class="list-unstyled">' +
+                      '<li><h5>' + respuesta[producto].det_Nombre_product + '</h5></li>' +
+                      '<li><span>$' + respuesta[producto].det_precio + '</span></li>' +
+                      '</ul>' +
+                      '<div class="contenedor-boton-agregar-carrito-comprador">' +
+                      '<button class="boton-agregar-carrito-comprador" data-bs-toggle="modal" data-bs-target="#agregarCarrito">Poner en el carrito</button>' +
+                      '</div>' +
+                      '</div>' +
+                      '</div>';
+              }
+          }
+      }
+  });
 
-    cargarDatosTar
-    cargarDatosTarjetas();
+    /* LISTAR MAS VENDIDOS */
 
-    /* LISTARMAS VENDIDOS */
+    const tarjetas2 = document.getElementById('tarjetasContainer2')
 
-    function cargarDatosTarjetas2() {
-      let tarjetasContainer2 = document.getElementById("tarjetasContainer2");
-      // Realiza la llamada AJAX para obtener los datos    
-      $.ajax({
-        url: "http://localhost:8080/ListarProductos",
-        dataType: "json",
-        success: function(datoss) {
-          mostrarDatosEnTarjetas(datoss);
-        },
-        error: function(jqXHR, textStatus, errorThrown) {
-          console.error("Error al cargar los productos:", textStatus, errorThrown);
-        }
-      });
-    }
-
-    function mostrarDatosEnTarjetas2(datoss) {
-      datos.forEach(function(datoss) {
-        let tarjeta2 = $("<div>").addClass("carta-producto", "card", "shadow");
-    
-        let imagenDiv2 = $("<div>").addClass("d-flex justify-content-center my-3");
-        let imagenProducto2 = $("<img>").attr("src", datoss.det_Img).addClass("d-block w-100");
-        imagenDiv2.append(imagenProducto2);
-        tarjeta2.append(imagenDiv2);
-    
-        let cardBody2 = $("<div>").addClass("card-body");
-    
-        let ul2 = $("<ul>").addClass("list-unstyled text-center");
-    
-        let nombreLi2 = $("<li>");
-        let nombreProducto2 = $("<h3>").addClass("text-success").attr("id", "nomproducto").text(datoss.det_Nombre_product);
-        nombreLi2.append(nombreProducto2);
-        ul2.append(nombreLi2);
-    
-        let precioLi2 = $("<li>");
-        let precioProducto2 = $("<span>").attr("id", "precioproducto").text(datoss.det_precio);
-        precioLi2.append(precioProducto2);
-        ul2.append(precioLi2);
-    
-        let cantidadLi2 = $("<li>");
-        let cantidadProducto2 = $("<span>").attr("id", "cantproducto").text(datoss.det_cantidad);
-        cantidadLi2.append(cantidadProducto2);
-        ul2.append(cantidadLi2);
-    
-        cardBody2.append(ul2);
-    
-        let verMasDiv2 = $("<div>").addClass("d-flex justify-content-center");
-        let verMasButton2 = $("<button>").addClass("boton-verMas-cartaProducto").attr("data-bs-toggle", "modal").attr("data-bs-target", "#vermas").html('<span>Ver más</span>');
-        verMasDiv2.append(verMasButton2);
-        cardBody2.append(verMasDiv2);
-    
-        tarjeta2.append(cardBody2);
-    
-        tarjetasContainer2.append(tarjeta2);
-      });
-    }
-       
-    cargarDatosTarjet2
-
-    cargarDatosTar2
-    cargarDatosTarjetas2();
+    $.ajax({
+      url: 'http://bdagroexpress-production.up.railway.app/Listarproductos',
+      type: 'GET',
+      dataType: "JSON",
+      success: function (respuesta) {
+          if (respuesta.length === 0) {
+              tarjetas2.innerHTML = '<div class="w-75 text-center"><h1>Lo sentimos</h1><span>No hay productos de esta categoría</span></div>';
+          } else {
+              for (let producto = 0; producto < respuesta.length; producto++) {
+                  let detReferencia = respuesta[producto].det_Referencia;
+                  tarjetas2.innerHTML += '<div class="carta-producto-comprador card">' +
+                      '<div class="card-img overflow-hidden">' +
+                      '<img src="../Img/Durazno.JPG" class="d-block w-100" alt="">' +
+                      '</div>' +
+                      '<div class="card-body">' +
+                      '<ul class="list-unstyled">' +
+                      '<li><h5>' + respuesta[producto].det_Nombre_product + '</h5></li>' +
+                      '<li><span>$' + respuesta[producto].det_precio + '</span></li>' +
+                      '</ul>' +
+                      '<div class="contenedor-boton-agregar-carrito-comprador">' +
+                      '<button class="boton-agregar-carrito-comprador" data-bs-toggle="modal" data-bs-target="#agregarCarrito">Poner en el carrito</button>' +
+                      '</div>' +
+                      '</div>' +
+                      '</div>';
+              }
+          }
+      }
+  });
 
 /* FRUTAS */
 
     /* LISTAR FRUTAS */
 
-    $.ajax({
-      url: "http://localhost:8080/Frutas",
-      Type: "GET",
-      dataType: "json",
-      success: function(data) {
-        mostrarProductosFruta(data);
-      },
-      error: function(jqXHR, textStatus, errorThrown) {
-        console.error("Error al cargar los productos:", textStatus, errorThrown);
+    // Función para cargar los productos desde el API
+function cargarProductos() {
+  let contenedorProductos = $(".contenedor-cartas-productos-categoria");
+  contenedorProductos.html(""); // Vaciar el contenedor de productos
+
+  $.ajax({
+      url: "http://bdagroexpress-production.up.railway.app/Frutas",
+      type: "GET",
+      dataType: "JSON",
+      success: function (respuesta) {
+          if (respuesta.length === 0) {
+              contenedorProductos.html('<div class="w-75 text-center"><h1>Lo sentimos</h1><span>No hay productos de esta categoría</span></div>');
+          } else {
+              for (let producto = 0; producto < respuesta.length; producto++) {
+                  let detReferencia = respuesta[producto].det_Referencia;
+                  let detNombre = respuesta[producto].det_Nombre_product;
+                  let detPrecio = respuesta[producto].det_precio;
+
+                  // Generar una carta de producto por cada elemento en la respuesta del API
+                  let cartaProducto = '<div class="carta-producto-categoria-fruta card">' +
+                      '<div class="card-img overflow-hidden">' +
+                      '<img src="../Img/Durazno.JPG" class="d-block w-100" alt="">' +
+                      '</div>' +
+                      '<div class="card-body">' +
+                      '<ul class="list-unstyled">' +
+                      '<li><h5>' + detNombre + '</h5></li>' +
+                      '<li><span>$' + detPrecio + '</span></li>' +
+                      '</ul>' +
+                      '<div class="contenedor-boton-agregar-carrito-comprador">' +
+                      '<button class="boton-agregar-carrito-comprador" data-bs-toggle="modal" data-bs-target="#agregarCarrito">Poner en el carrito</button>' +
+                      '</div>' +
+                      '</div>' +
+                      '</div>';
+
+                  // Agregar la carta del producto al contenedor de productos
+                  contenedorProductos.append(cartaProducto);
+              }
+          }
       }
-    });
-    
-    function mostrarProductosFruta(data) {
-      const tarjetas = $(".carta-producto-categoria-fruta");
-      
-      data.forEach((producto, index) => {
-        const tarjeta = tarjetas.eq(index);
-        const img = tarjeta.find("img");
-        const h5 = tarjeta.find("h5");
-        const span = tarjeta.find("span");
-        img.attr("src", producto.det_Img);
-        h5.text(producto.det_Nombre_product);
-        span.text(producto.det_precio);
-      });
-    }
-    
+  });
+}
+
+// Cargar los productos cuando la imagen termine de cargarse
+let imagen = new Image();
+imagen.src = "../Img/Durazno.JPG";
+imagen.onload = cargarProductos;
+
     /* BUSCADOR FRUTAS */
 
-    const inputBuscar2 = document.querySelector(".buscador input");
-    inputBuscar2.addEventListener("input", filtrarTarjetas2());
+    // Función para cargar los productos desde el API y aplicar el filtrado
+function cargarYFiltrarProductos(filtro) {
+  let contenedorProductos = $(".contenedor-cartas-productos-categoria");
+  contenedorProductos.html(""); // Vaciar el contenedor de productos
 
-    function filtrarTarjetas2() {
-      const inputValor2 = inputBuscar2.value.trim().toLowerCase();
-      const tarjetas2 = document.querySelectorAll(".carta-producto-comprador");
-    
-      tarjetas2.forEach(tarjeta2 => {
-        const nombreProducto2 = tarjeta2.querySelector("h5").textContent.trim().toLowerCase();
-    
-        if (nombreProducto2.includes(inputValor2)) {
-          tarjeta2.style.display = "block";
-        } else {
-          tarjeta2.style.display = "none";
-        }
-      });
-    }
+  $.ajax({
+      url: "http://bdagroexpress-production.up.railway.app/Frutas",
+      type: "GET",
+      dataType: "JSON",
+      success: function (respuesta) {
+          if (respuesta.length === 0) {
+              contenedorProductos.html('<div class="w-75 text-center"><h1>Lo sentimos</h1><span>No hay productos de esta categoría</span></div>');
+          } else {
+              for (let producto = 0; producto < respuesta.length; producto++) {
+                  let detNombre = respuesta[producto].det_Nombre_product;
+                  // Aplicar el filtro y mostrar solo los productos que coinciden con el texto de búsqueda
+                  if (detNombre.toLowerCase().includes(filtro.toLowerCase())) {
+                      // Generar una carta de producto por cada elemento en la respuesta del API
+                      let cartaProducto = '<div class="carta-producto-categoria-fruta card">' +
+                          '<div class="card-img overflow-hidden">' +
+                          '<img src="../Img/Durazno.JPG" class="d-block w-100" alt="">' +
+                          '</div>' +
+                          '<div class="card-body">' +
+                          '<ul class="list-unstyled">' +
+                          '<li><h5>' + detNombre + '</h5></li>' +
+                          '<li><span>$' + respuesta[producto].det_precio + '</span></li>' +
+                          '</ul>' +
+                          '<div class="contenedor-boton-agregar-carrito-comprador">' +
+                          '<button class="boton-agregar-carrito-comprador" data-bs-toggle="modal" data-bs-target="#agregarCarrito">Poner en el carrito</button>' +
+                          '</div>' +
+                          '</div>' +
+                          '</div>';
+
+                      // Agregar la carta del producto al contenedor de productos
+                      contenedorProductos.append(cartaProducto);
+                  }
+              }
+          }
+      }
+  });
+}
+
+// Función para filtrar las cartas de producto al hacer clic en el ícono de búsqueda
+function filtrarTarjetas2() {
+  let filtro = $("#inputBusqueda").val();
+  cargarYFiltrarProductos(filtro);
+}
+
+// Cargar los productos al inicio
+$(document).ready(function () {
+  cargarYFiltrarProductos("");
+});
+
 });

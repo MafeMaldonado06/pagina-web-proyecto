@@ -245,7 +245,7 @@
 
             <div class="d-flex justify-content-center align-items-center py-2">
                 <div class="contenedor-tabla d-flex align-items-center justify-content-center rounded-3 overflow-hidden">
-                    <table class="table table-hover table-striped text-center" id="tablaPedidos"¿U>
+                    <table class="table table-hover table-striped text-center" id="tablaPedidos">
                         <tr>
                             <th>
                                 No Compra
@@ -318,90 +318,20 @@
     <div class="d-flex justify-content-center mt-md-3 mt-sm-4">
         <div class="caja-buscador d-flex align-items-center">
             <div class="buscador overflow-hidden rounded-5 d-flex">
-                <input type="text" class="border-0 pe-3 col" placeholder="Buscar">
+                <input type="text" class="border-0 pe-3 col" id="inputBusqueda" placeholder="Buscar">
                 <div class="icon-search d-flex align-items-center justify-content-center col-2 text-center bg-body-secondary" onclick="filtrarTarjetas()">
                     <i class="bi bi-search"></i>
                 </div>
             </div>
         </div>
     </div>
-
+    
     <div class="d-flex justify-content-center my-2">
         <div id="tarjetasContainer" class="w-75 d-flex justify-content-center flex-wrap py-4">
-            <!-- <div class="carta-producto-comprador card">
-                <div class="card-img overflow-hidden">
-                    <img src="../Img/Durazno.JPG" class="d-block w-100" alt="">
-                </div>
-
-                <div class="card-body">
-                    <ul class="list-unstyled">
-                        <li>
-                            <h5>Durazno</h5>
-                        </li>
-                        <li>
-                            <span>$3.500</span>
-                        </li>
-                    </ul>
-
-                    <div class="contenedor-boton-agregar-carrito-comprador">
-                        <button class="boton-agregar-carrito-comprador" data-bs-toggle="modal" data-bs-target="#agregarCarrito">Poner en el carrito</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="carta-producto-comprador card">
-                <div class="card-img overflow-hidden">
-                    <img src="../Img/Durazno.JPG" class="d-block w-100" alt="">
-                </div>
-
-                <div class="card-body">
-                    <ul class="list-unstyled">
-                        <li>
-                            <h5>Durazno</h5>
-                        </li>
-                        <li>
-                            <span>$3.500</span>
-                        </li>
-                    </ul>
-
-                    <div class="contenedor-boton-agregar-carrito-comprador">
-                        <button class="boton-agregar-carrito-comprador" data-bs-toggle="modal" data-bs-target="#agregarCarrito">Poner en el carrito</button>
-                    </div>
-                </div>
-            </div> -->
+            <!-- Aquí estarán las cartas de productos que se generarán dinámicamente -->
         </div>
     </div>
-
-    <div class="modal fade" id="agregarCarrito" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">Agregar al carrito</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <div>
-                    <div>
-                        <span>Durazno</span>
-                    </div>
-
-                    <div>
-                        <div>
-                            <img src="../img/Durazno.JPG" alt="">
-                        </div>
-                        <div>
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
-          </div>
-        </div>
-    </div>
+    
 
     <div class="contenedor-general-mas-vendido d-flex flex-column align-items-center my-4">
         <div class="w-75 py-3">
